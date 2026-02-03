@@ -930,3 +930,40 @@ function bodhi_customize_css() {
     <?php
 }
 add_action( 'wp_head', 'bodhi_customize_css' );
+
+/*
+ * BODHI SECURITY SUITE
+ * Added for enhanced site security ("Surerity")
+ */
+
+// 1. Hide WordPress Version (Security by Obscurity)
+remove_action('wp_head', 'wp_generator');
+
+// 2. Disable XML-RPC (Prevents Brute Force/DDoS attacks)
+add_filter('xmlrpc_enabled', '__return_false');
+
+// 3. Remove XML-RPC & wlwmanifest links from head
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+
+// 4. Add HTTP Security Headers
+function bodhi_security_headers() {
+    if ( !is_admin() ) {
+        header( 'X-Frame-Options: SAMEORIGIN' ); // Prevents Clickjacking
+        header( 'X-XSS-Protection: 1; mode=block' ); // Block XSS
+        header( 'X-Content-Type-Options: nosniff' ); // Prevent MIME sniffing
+        header( 'Referrer-Policy: no-referrer-when-downgrade' );
+    }
+}
+add_action( 'send_headers', 'bodhi_security_headers' );
+
+// 5. Block User Enumeration (Scans for ?author=1)
+function bodhi_block_user_enumeration() {
+    if ( is_admin() ) return;
+    $author = get_query_var( 'author' );
+    if ( $author ) {
+        wp_redirect( home_url(), 301 );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
