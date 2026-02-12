@@ -18,6 +18,38 @@ get_header(); ?>
         </div>
     </section>
 
+    <!-- Mission & Vision -->
+    <section class="mission-vision section-padding bg-offset" style="position: relative; overflow: hidden;">
+        <!-- Subtle background element -->
+        <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(0, 91, 79, 0.03); border-radius: 50%; pointer-events: none;"></div>
+
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <!-- Mission Card -->
+                <div class="mv-card animate-fade-up" style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-card); border-top: 5px solid var(--primary); transition: 0.3s; position: relative; z-index: 2;">
+                    <div style="width: 60px; height: 60px; background: var(--primary-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); margin-bottom: 25px; font-size: 1.5rem;">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px;"><?php echo get_field('about_mission_title') ?: 'Our Mission'; ?></h3>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem;">
+                        <?php echo get_field('about_mission_text') ?: "Our mission is to find and transform the student's talents into a highly skilled and resourceful force through advanced science education and expert-led entrance coaching."; ?>
+                    </p>
+                </div>
+
+                <!-- Vision Card -->
+                <div class="mv-card animate-fade-up delay-100" style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--shadow-card); border-top: 5px solid var(--accent); transition: 0.3s; position: relative; z-index: 2;">
+                    <div style="width: 60px; height: 60px; background: #fffbec; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--accent); margin-bottom: 25px; font-size: 1.5rem;">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px;"><?php echo get_field('about_vision_title') ?: 'Our Vision'; ?></h3>
+                    <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem;">
+                        <?php echo get_field('about_vision_text') ?: "To become a transformative human resource development platform that nurtures students’ innate potential, empowers their aspirations, and shapes future-ready professionals through advanced coaching, mentorship, and innovative learning systems."; ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Our Story -->
     <section class="section-padding">
         <div class="container">

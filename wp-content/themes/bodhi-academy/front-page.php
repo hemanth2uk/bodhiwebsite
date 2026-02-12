@@ -63,6 +63,24 @@ get_header(); ?>
             </div>
         </div>
     </section>
+    
+    <!-- News Ticker Section -->
+    <div class="news-ticker-wrapper" style="background: var(--primary-dark); padding: 15px 0; border-bottom: 2px solid var(--accent); overflow: hidden;">
+        <div class="container" style="display: flex; align-items: center; gap: 30px;">
+            <div class="news-label" style="background: var(--accent); color: #000; padding: 5px 20px; border-radius: 5px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; white-space: nowrap; box-shadow: 0 4px 10px rgba(255,193,7,0.3);">
+                <i class="fas fa-bullhorn" style="margin-right: 8px;"></i> <?php echo get_field('home_news_title') ?: 'Latest News'; ?>
+            </div>
+            <div class="ticker-content" style="flex: 1; overflow: hidden; position: relative; height: 30px;">
+                <div class="ticker-inner animate-scroll" style="display: flex; gap: 100px; white-space: nowrap; align-items: center; color: white; font-weight: 500; font-size: 0.95rem;">
+                    <span><?php echo get_field('home_news_1') ?: 'NEET UG 2026: Registration LIVE - Ends March 8, 2026'; ?></span>
+                    <span><?php echo get_field('home_news_2') ?: 'JEE Main 2026 (Session 2): Registration LIVE - Ends Feb 25'; ?></span>
+                    <span><?php echo get_field('home_news_3') ?: 'ISI Admission Test 2026: Registration LIVE - Exam May 10'; ?></span>
+                    <!-- Loop back for seamless scrolling -->
+                    <span><?php echo get_field('home_news_1') ?: 'NEET UG 2026: Registration LIVE - Ends March 8, 2026'; ?></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Popular Courses -->
     <section class="section-padding">
@@ -125,27 +143,26 @@ get_header(); ?>
                         <?php echo get_field('why_choose_title') ?: 'Education that <br> Enlightens'; ?>
                     </h2>
                     
-                    <div style="margin-top:30px; display:flex; flex-direction:column; gap:20px;">
-                        <div style="display:flex; gap:20px;">
-                            <div style="min-width:50px; height:50px; background:white; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--primary); box-shadow:0 5px 15px rgba(0,0,0,0.05);"><i class="fas fa-brain"></i></div>
-                            <div>
-                                <h3><?php echo get_field('why_1_title') ?: 'Concept Mastery'; ?></h3>
-                                <p style="font-size:0.95rem; color:var(--text-muted);"><?php echo get_field('why_1_desc') ?: 'We don\'t just teach for exams; we teach for deep understanding and long-term retention.'; ?></p>
-                            </div>
+                    <div class="pillars-grid" style="margin-top:40px; display:grid; grid-template-columns: 1fr 1fr; gap:25px;">
+                        <div class="pillar-item animate-fade-up" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); transition: 0.3s;">
+                            <div style="width:50px; height:50px; background:rgba(0,150,136,0.1); border-radius:15px; display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:15px;"><i class="fas fa-chalkboard-teacher fa-lg"></i></div>
+                            <h3 style="font-size:1.1rem; margin-bottom:8px;"><?php echo get_field('why_1_title') ?: 'Mentorship Driven'; ?></h3>
+                            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;"><?php echo get_field('why_1_desc') ?: 'Expert mentors bridge the gap between school theory and entrance application.'; ?></p>
                         </div>
-                        <div style="display:flex; gap:20px;">
-                            <div style="min-width:50px; height:50px; background:white; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--primary); box-shadow:0 5px 15px rgba(0,0,0,0.05);"><i class="fas fa-users-cog"></i></div>
-                            <div>
-                                <h3><?php echo get_field('why_2_title') ?: 'Holistic Mentorship'; ?></h3>
-                                <p style="font-size:0.95rem; color:var(--text-muted);"><?php echo get_field('why_2_desc') ?: 'Guidance that goes beyond academics, helping students manage stress and stay motivated.'; ?></p>
-                            </div>
+                        <div class="pillar-item animate-fade-up delay-100" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); transition: 0.3s;">
+                            <div style="width:50px; height:50px; background:rgba(0,150,136,0.1); border-radius:15px; display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:15px;"><i class="fas fa-spa fa-lg"></i></div>
+                            <h3 style="font-size:1.1rem; margin-bottom:8px;"><?php echo get_field('why_2_title') ?: 'Focus & Wellness'; ?></h3>
+                            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;"><?php echo get_field('why_2_desc') ?: 'Integrated meditation and stress management for peak academic performance.'; ?></p>
                         </div>
-                        <div style="display:flex; gap:20px;">
-                            <div style="min-width:50px; height:50px; background:white; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--primary); box-shadow:0 5px 15px rgba(0,0,0,0.05);"><i class="fas fa-laptop"></i></div>
-                            <div>
-                                <h3><?php echo get_field('why_3_title') ?: 'Digital & Physical'; ?></h3>
-                                <p style="font-size:0.95rem; color:var(--text-muted);"><?php echo get_field('why_3_desc') ?: 'Seamlessly integrated app and classroom experience for 24/7 learning.'; ?></p>
-                            </div>
+                        <div class="pillar-item animate-fade-up delay-200" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); transition: 0.3s;">
+                            <div style="width:50px; height:50px; background:rgba(0,150,136,0.1); border-radius:15px; display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:15px;"><i class="fas fa-chart-pie fa-lg"></i></div>
+                            <h3 style="font-size:1.1rem; margin-bottom:8px;"><?php echo get_field('why_3_title') ?: 'Smart Analytics'; ?></h3>
+                            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;"><?php echo get_field('why_3_desc') ?: 'Meticulous result analysis to identify and refine your innate potential.'; ?></p>
+                        </div>
+                        <div class="pillar-item animate-fade-up delay-300" style="background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); transition: 0.3s;">
+                            <div style="width:50px; height:50px; background:rgba(0,150,136,0.1); border-radius:15px; display:flex; align-items:center; justify-content:center; color:var(--primary); margin-bottom:15px;"><i class="fas fa-palette fa-lg"></i></div>
+                            <h3 style="font-size:1.1rem; margin-bottom:8px;"><?php echo get_field('why_4_title') ?: 'Creative Learning'; ?></h3>
+                            <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;"><?php echo get_field('why_4_desc') ?: 'Scientific methodologies and rhythmic learning environments for better retention.'; ?></p>
                         </div>
                     </div>
                 </div>
