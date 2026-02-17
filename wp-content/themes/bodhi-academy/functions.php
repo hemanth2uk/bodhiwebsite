@@ -13,6 +13,9 @@ function bodhi_setup() {
     // Register Navigation Menus
     register_nav_menus( array(
         'primary' => 'Primary Menu',
+        'footer_courses' => 'Footer - Courses Menu',
+        'footer_quick_links' => 'Footer - Quick Links Menu',
+        'footer_bottom'  => 'Footer - Bottom Bar Menu',
     ) );
 
     // Enable Custom Logo
@@ -24,6 +27,20 @@ function bodhi_setup() {
     ) );
 }
 add_action( 'after_setup_theme', 'bodhi_setup' );
+
+/*
+ * Add ACF Options Page for Footer
+ */
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page(array(
+        'page_title'    => 'Footer Settings',
+        'menu_title'    => 'Footer Settings',
+        'menu_slug'     => 'footer-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false,
+        'icon_url'      => 'dashicons-layout',
+    ));
+}
 
 function bodhi_scripts() {
     // Enqueue Google Fonts
@@ -1438,6 +1455,60 @@ add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'news',
+                ),
+            ),
+        ),
+    ));
+
+    // FOOTER SETTINGS FIELDS
+    acf_add_local_field_group(array(
+        'key' => 'group_footer_settings',
+        'title' => 'Footer settings',
+        'fields' => array(
+            // ABOUT COLUMN
+            array(
+                'key' => 'tab_footer_about',
+                'label' => 'About Section',
+                'type' => 'tab',
+            ),
+            array(
+                'key' => 'field_footer_desc',
+                'label' => 'Footer Description',
+                'name' => 'footer_description',
+                'type' => 'textarea',
+                'default_value' => 'Empowering students with expert coaching for NEET, JEE, and Entrance Exams.',
+            ),
+            
+            // SOCIAL LINKS
+            array(
+                'key' => 'tab_footer_social',
+                'label' => 'Social Links',
+                'type' => 'tab',
+            ),
+            array('key' => 'field_f_fb', 'label' => 'Facebook URL', 'name' => 'footer_facebook', 'type' => 'url', 'default_value' => '#'),
+            array('key' => 'field_f_ig', 'label' => 'Instagram URL', 'name' => 'footer_instagram', 'type' => 'url', 'default_value' => '#'),
+            array('key' => 'field_f_yt', 'label' => 'YouTube URL', 'name' => 'footer_youtube', 'type' => 'url', 'default_value' => '#'),
+            array('key' => 'field_f_li', 'label' => 'LinkedIn URL', 'name' => 'footer_linkedin', 'type' => 'url', 'default_value' => '#'),
+            
+            // CONTACT COLUMN
+            array(
+                'key' => 'tab_footer_contact',
+                'label' => 'Contact Info',
+                'type' => 'tab',
+            ),
+            array('key' => 'field_f_email', 'label' => 'Contact Email', 'name' => 'footer_email', 'type' => 'text', 'default_value' => 'admissions@bodhiacademy.com'),
+            array('key' => 'field_f_phone', 'label' => 'Phone 1', 'name' => 'footer_phone', 'type' => 'text', 'default_value' => '+91 98765 43210'),
+            array('key' => 'field_f_wa', 'label' => 'WhatsApp Number', 'name' => 'footer_whatsapp', 'type' => 'text', 'default_value' => '+91 98765 43210'),
+            array('key' => 'field_f_address', 'label' => 'Address Line 1', 'name' => 'footer_address_1', 'type' => 'text', 'default_value' => 'Bodhi Academy,'),
+            array('key' => 'field_f_address_2', 'label' => 'Address Line 2', 'name' => 'footer_address_2', 'type' => 'text', 'default_value' => 'Kaloor, Kochi,'),
+            array('key' => 'field_f_address_3', 'label' => 'Address Line 3', 'name' => 'footer_address_3', 'type' => 'text', 'default_value' => 'Kerala, 682017'),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'options_page',
+                    'operator' => '==',
+                    'value' => 'footer-settings',
                 ),
             ),
         ),

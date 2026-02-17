@@ -7,7 +7,7 @@
                         <span style="color:#FFC107; font-size:1.8rem; font-weight:800;">Bodhi</span> <span style="color:white; font-size:1.8rem; font-weight:700;">Academy</span>
                     </a>
                     <p class="footer-desc" style="margin-top:15px; opacity:0.8;">
-                        Empowering students with expert coaching for NEET, JEE, and Entrance Exams.
+                        <?php echo esc_html(get_field('footer_description', 'option') ?: 'Empowering students with expert coaching for NEET, JEE, and Entrance Exams.'); ?>
                     </p>
                     
                     <!-- Newsletter -->
@@ -20,51 +20,68 @@
                     </div>
 
                     <div class="social-icons">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <?php 
+                        $socials = array(
+                            'facebook-f' => 'footer_facebook',
+                            'instagram'  => 'footer_instagram',
+                            'youtube'    => 'footer_youtube',
+                            'linkedin-in' => 'footer_linkedin'
+                        );
+                        foreach($socials as $icon => $field) : 
+                            $url = get_field($field, 'option');
+                            if($url) : ?>
+                                <a href="<?php echo esc_url($url); ?>" class="social-link" target="_blank"><i class="fab fa-<?php echo $icon; ?>"></i></a>
+                            <?php endif;
+                        endforeach; ?>
                     </div>
                 </div>
 
-                <!-- Column 2: Courses (Displayed as 2 sub-columns) -->
+                <!-- Column 2: Courses -->
                 <div class="footer-col col-courses">
                     <h4 class="footer-heading">Courses</h4>
-                    <div class="courses-grid">
-                        <ul class="course-list">
-                            <li><a href="#">NEET</a></li>
-                            <li><a href="#">JEE</a></li>
-                            <li><a href="#">KEAM</a></li>
-                        </ul>
-                        <ul class="course-list">
-                            <li><a href="#">CUET</a></li>
-                            <li><a href="#">Science 11 & 12</a></li>
-                        </ul>
-                    </div>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer_courses',
+                        'container'      => false,
+                        'menu_class'     => 'course-list', // Standardizing class for CSS
+                        'fallback_cb'    => '__return_false',
+                        'depth'          => 1,
+                    ));
+                    ?>
                 </div>
 
                 <!-- Column 3: Quick Links -->
                 <div class="footer-col col-links">
                     <h4 class="footer-heading">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">App Login</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer_quick_links',
+                        'container'      => false,
+                        'menu_class'     => 'footer-links',
+                        'fallback_cb'    => '__return_false',
+                        'depth'          => 1,
+                    ));
+                    ?>
                 </div>
 
                 <!-- Column 4: Contact Us -->
                 <div class="footer-col col-contact">
                     <h4 class="footer-heading">Contact Us</h4>
                     <ul class="contact-list">
-                        <li><i class="fas fa-envelope"></i> admissions@bodhiacademy.com</li>
-                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
-                        <li><i class="fab fa-whatsapp"></i> +91 98765 43210</li>
+                        <?php if($email = get_field('footer_email', 'option')) : ?>
+                            <li><i class="fas fa-envelope"></i> <?php echo esc_html($email); ?></li>
+                        <?php endif; ?>
+                        <?php if($phone = get_field('footer_phone', 'option')) : ?>
+                            <li><i class="fas fa-phone"></i> <?php echo esc_html($phone); ?></li>
+                        <?php endif; ?>
+                        <?php if($wa = get_field('footer_whatsapp', 'option')) : ?>
+                            <li><i class="fab fa-whatsapp"></i> <?php echo esc_html($wa); ?></li>
+                        <?php endif; ?>
                         <li>
                             <i class="fas fa-map-marker-alt"></i> 
-                            Bodhi Academy,<br>
-                            Kaloor, Kochi,<br>
-                            Kerala, 682017
+                            <?php echo esc_html(get_field('footer_address_1', 'option')); ?><br>
+                            <?php echo esc_html(get_field('footer_address_2', 'option')); ?><br>
+                            <?php echo esc_html(get_field('footer_address_3', 'option')); ?>
                         </li>
                     </ul>
                 </div>
