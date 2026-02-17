@@ -36,17 +36,26 @@
         <!-- Global News Ticker -->
         <div class="news-ticker-wrapper" style="background: var(--primary-dark); padding: 12px 0; border-bottom: 2px solid var(--accent); overflow: hidden; position: relative; z-index: 1001;">
             <div class="container" style="display: flex; align-items: center; gap: 30px;">
-                <div class="news-label" style="background: var(--accent); color: #000; padding: 4px 15px; border-radius: 4px; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; white-space: nowrap; box-shadow: 0 4px 10px rgba(255,193,7,0.2);">
-                    <i class="fas fa-bullhorn" style="margin-right: 6px;"></i> <?php echo get_field('home_news_title', get_option('page_on_front')) ?: 'Latest Updates'; ?>
-                </div>
+                <a href="<?php echo home_url('/news/'); ?>" class="news-label-link" style="text-decoration:none; display:block;">
+                    <div class="news-label" style="background: var(--accent); color: #000; padding: 4px 15px; border-radius: 4px; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; white-space: nowrap; box-shadow: 0 4px 10px rgba(255,193,7,0.2);">
+                        <i class="fas fa-bullhorn" style="margin-right: 6px;"></i> <?php echo get_field('home_news_title', get_option('page_on_front')) ?: 'Latest Updates'; ?>
+                    </div>
+                </a>
                 <div class="ticker-content" style="flex: 1; overflow: hidden; position: relative; height: 24px;">
                     <div class="ticker-inner animate-scroll" style="display: flex; gap: 80px; white-space: nowrap; align-items: center; color: white; font-weight: 500; font-size: 0.9rem;">
                         
                         <!-- Manual News from ACF -->
                         <?php for($i=1; $i<=3; $i++) : 
                             $news = get_field('home_news_'.$i, get_option('page_on_front'));
+                            $link = get_field('home_news_'.$i.'_link', get_option('page_on_front'));
                             if($news) : ?>
-                                <span><?php echo esc_html($news); ?></span>
+                                <?php if($link) : ?>
+                                    <a href="<?php echo esc_url($link); ?>" style="color:white; text-decoration:none;" class="ticker-item-link">
+                                        <?php echo esc_html($news); ?>
+                                    </a>
+                                <?php else : ?>
+                                    <span><?php echo esc_html($news); ?></span>
+                                <?php endif; ?>
                             <?php endif;
                         endfor; ?>
 
@@ -55,7 +64,7 @@
                         $live_feed = bodhi_get_live_exam_feed(5);
                         if($live_feed) : 
                             foreach($live_feed as $item) : ?>
-                                <a href="<?php echo esc_url($item['link']); ?>" target="_blank" style="color:white; text-decoration:none;">
+                                <a href="<?php echo esc_url($item['link']); ?>" target="_blank" style="color:white; text-decoration:none;" class="ticker-item-link">
                                     <span style="background:red; color:white; padding:2px 6px; border-radius:3px; font-size:0.7rem; font-weight:bold; margin-right:8px; vertical-align:middle;">LIVE</span>
                                     <?php echo esc_html($item['title']); ?>
                                 </a>
@@ -66,6 +75,18 @@
                 </div>
             </div>
         </div>
+
+        <style>
+            .ticker-item-link:hover {
+                color: var(--accent) !important;
+                text-decoration: underline !important;
+            }
+            .news-label-link:hover .news-label {
+                background: white !important;
+                transform: translateY(-1px);
+                transition: all 0.3s ease;
+            }
+        </style>
 		
         <!-- Top Bar: Logo & Info -->
         <div class="header-top">
