@@ -1502,6 +1502,21 @@ add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
             array('key' => 'field_f_address', 'label' => 'Address Line 1', 'name' => 'footer_address_1', 'type' => 'text', 'default_value' => 'Bodhi Academy,'),
             array('key' => 'field_f_address_2', 'label' => 'Address Line 2', 'name' => 'footer_address_2', 'type' => 'text', 'default_value' => 'Kaloor, Kochi,'),
             array('key' => 'field_f_address_3', 'label' => 'Address Line 3', 'name' => 'footer_address_3', 'type' => 'text', 'default_value' => 'Kerala, 682017'),
+
+            // LIVE FEED
+            array(
+                'key' => 'tab_live_feed',
+                'label' => 'Live Exam Feed',
+                'type' => 'tab',
+            ),
+            array(
+                'key' => 'field_rss_feed_url',
+                'label' => 'RSS Feed URL',
+                'name' => 'live_exam_rss_url',
+                'type' => 'url',
+                'instructions' => 'External RSS feed for exam notifications (e.g. Manorama Education).',
+                'default_value' => 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml',
+            ),
         ),
         'location' => array(
             array(
@@ -1520,3 +1535,38 @@ add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
         flush_rewrite_rules();
     }
     add_action( 'after_switch_theme', 'bodhi_flush_news_rewrites' );
+
+/**
+ * Fetch and parse Live Exam Feed from RSS
+ */
+function bodhi_get_live_exam_feed($limit = 5) {
+    if ( !function_exists('fetch_feed') ) {
+        include_once(ABSPATH . WPINC . '/feed.php');
+    }
+
+    $rss_url = get_field('live_exam_rss_url', 'options');
+    if (!$rss_url) {
+        $rss_url = 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml';
+    }
+
+    $rss = fetch_feed($rss_url);
+    $items = array();
+
+    if ( !is_wp_error($rss) ) {
+        $maxitems = $rss->get_item_quantity($limit);
+        $rss_items = $rss->get_items(0, $maxitems);
+
+        foreach ( $rss_items as $item ) {
+            $title = $item->get_title();
+            // Optional: Clean title if needed
+            $items[] = array(
+                'title' => $title,
+                'link'  => $item->get_permalink(),
+                'date'  => $item->get_date('j M Y'),
+                'source'=> 'LIVE'
+            );
+        }
+    }
+
+    return $items;
+}

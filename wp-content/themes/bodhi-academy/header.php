@@ -41,11 +41,27 @@
                 </div>
                 <div class="ticker-content" style="flex: 1; overflow: hidden; position: relative; height: 24px;">
                     <div class="ticker-inner animate-scroll" style="display: flex; gap: 80px; white-space: nowrap; align-items: center; color: white; font-weight: 500; font-size: 0.9rem;">
-                        <span><?php echo get_field('home_news_1', get_option('page_on_front')) ?: 'Welcome to Bodhi Academy - Excellence in Education'; ?></span>
-                        <span><?php echo get_field('home_news_2', get_option('page_on_front')) ?: 'NEET & JEE 2026 Batch Admissions Open'; ?></span>
-                        <span><?php echo get_field('home_news_3', get_option('page_on_front')) ?: 'Contact us for a free session & career counseling'; ?></span>
-                        <!-- Loop for smooth scrolling -->
-                        <span aria-hidden="true"><?php echo get_field('home_news_1', get_option('page_on_front')) ?: 'Welcome to Bodhi Academy - Excellence in Education'; ?></span>
+                        
+                        <!-- Manual News from ACF -->
+                        <?php for($i=1; $i<=3; $i++) : 
+                            $news = get_field('home_news_'.$i, get_option('page_on_front'));
+                            if($news) : ?>
+                                <span><?php echo esc_html($news); ?></span>
+                            <?php endif;
+                        endfor; ?>
+
+                        <!-- Live Feed from External RSS -->
+                        <?php 
+                        $live_feed = bodhi_get_live_exam_feed(5);
+                        if($live_feed) : 
+                            foreach($live_feed as $item) : ?>
+                                <a href="<?php echo esc_url($item['link']); ?>" target="_blank" style="color:white; text-decoration:none;">
+                                    <span style="background:red; color:white; padding:2px 6px; border-radius:3px; font-size:0.7rem; font-weight:bold; margin-right:8px; vertical-align:middle;">LIVE</span>
+                                    <?php echo esc_html($item['title']); ?>
+                                </a>
+                            <?php endforeach;
+                        endif; ?>
+
                     </div>
                 </div>
             </div>
