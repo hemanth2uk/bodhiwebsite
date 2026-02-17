@@ -199,9 +199,9 @@ get_header(); ?>
             </div>
             
             <!-- Map Integration -->
-             <div class="animate-fade-in" style="margin-top: 100px; border-radius: 30px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.1); height: 500px; position: relative;">
+             <div class="animate-fade-in" style="margin-top: 100px; border-radius: 40px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.1); height: 500px; position: relative;">
                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.071850119859!2d76.284240776!3d9.981881790122176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d40f53195ed%3A0xe549015c8e378f8!2sKaloor%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    src="<?php echo get_field('contact_map_embed_url') ?: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.071850119859!2d76.284240776!3d9.981881790122176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d40f53195ed%3A0xe549015c8e378f8!2sKaloor%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin'; ?>" 
                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                  </iframe>
                  <div style="position: absolute; bottom: 30px; left: 30px; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); padding: 25px 35px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 1px solid white;">

@@ -1027,6 +1027,7 @@ if( function_exists('acf_add_local_field_group') ):
 
             // Map
             array('key' => 'field_con_map_url', 'label' => 'Google Maps Link', 'name' => 'contact_map_url', 'type' => 'url', 'default_value' => 'https://goo.gl/maps/example'),
+            array('key' => 'field_con_map_embed', 'label' => 'Google Maps Embed URL', 'name' => 'contact_map_embed_url', 'type' => 'textarea', 'instructions' => 'Paste the "src" URL from the Google Maps iframe embed code.', 'default_value' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.071850119859!2d76.284240776!3d9.981881790122176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d40f53195ed%3A0xe549015c8e378f8!2sKaloor%2C%20Kochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin'),
 
             // Shortcode
             array('key' => 'field_con_shortcode', 'label' => 'Contact Form Shortcode', 'name' => 'contact_form_shortcode', 'type' => 'text', 'default_value' => '[contact-form-7 title="Contact Bodhi Academy (Premium)"]'),
