@@ -68,6 +68,19 @@
                             <?php endforeach;
                         endif; ?>
 
+                        <!-- Manual Academy Announcements Fallback -->
+                        <?php for($i=1; $i<=3; $i++) : 
+                            $news = get_field('home_news_'.$i, get_option('page_on_front'));
+                            if($news) : ?>
+                                <div style="display:flex; align-items:center;">
+                                    <span style="color:white; font-size:0.9rem;">
+                                        <i class="fas fa-star" style="color:var(--accent); margin-right:8px; font-size:0.8rem;"></i> <?php echo esc_html($news); ?>
+                                    </span>
+                                </div>
+                                <span style="color:rgba(255,255,255,0.2);">|</span>
+                            <?php endif;
+                        endfor; ?>
+
                     </div>
                 </div>
             </div>

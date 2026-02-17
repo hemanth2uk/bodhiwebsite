@@ -1536,19 +1536,15 @@ add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
                 'default_value' => array(
                     array(
                         'source_name' => 'KERALA STATE',
-                        'feed_url' => 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml',
+                        'feed_url' => 'https://news.google.com/rss/search?q=Kerala+exam+notifications&hl=en-IN&gl=IN&ceid=IN:en',
                     ),
                     array(
-                        'source_name' => 'CBSE NEWS',
-                        'feed_url' => 'https://news.google.com/rss/search?q=CBSE+exam+notifications+official+when:7d&hl=en-IN&gl=IN&ceid=IN:en',
+                        'source_name' => 'CBSE/ICSE',
+                        'feed_url' => 'https://news.google.com/rss/search?q=CBSE+ICSE+exam+date+notifications&hl=en-IN&gl=IN&ceid=IN:en',
                     ),
                     array(
-                        'source_name' => 'ICSE NEWS',
-                        'feed_url' => 'https://news.google.com/rss/search?q=ICSE+ISC+exam+notifications+official+when:7d&hl=en-IN&gl=IN&ceid=IN:en',
-                    ),
-                    array(
-                        'source_name' => 'ENTRANCE',
-                        'feed_url' => 'https://news.google.com/rss/search?q=NEET+JEE+KEAM+exam+notifications+when:7d&hl=en-IN&gl=IN&ceid=IN:en',
+                        'source_name' => 'ENTRANCE NEWS',
+                        'feed_url' => 'https://news.google.com/rss/search?q=NEET+JEE+KEAM+exam+notifications&hl=en-IN&gl=IN&ceid=IN:en',
                     )
                 ),
             ),
@@ -1593,8 +1589,16 @@ function bodhi_get_live_exam_feed($limit = 10) {
     if (!$sources) {
         $sources = array(
             array(
-                'source_name' => 'KERALA NEWS',
-                'feed_url' => 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml'
+                'source_name' => 'KERALA STATE',
+                'feed_url' => 'https://news.google.com/rss/search?q=Kerala+exam+notifications&hl=en-IN&gl=IN&ceid=IN:en'
+            ),
+            array(
+                'source_name' => 'CBSE/ICSE',
+                'feed_url' => 'https://news.google.com/rss/search?q=CBSE+ICSE+exam+date+notifications&hl=en-IN&gl=IN&ceid=IN:en'
+            ),
+            array(
+                'source_name' => 'ENTRANCE NEWS',
+                'feed_url' => 'https://news.google.com/rss/search?q=NEET+JEE+KEAM+exam+notifications&hl=en-IN&gl=IN&ceid=IN:en'
             )
         );
     }
@@ -1602,6 +1606,7 @@ function bodhi_get_live_exam_feed($limit = 10) {
     foreach ($sources as $source) {
         $rss = fetch_feed($source['feed_url']);
         if ( !is_wp_error($rss) ) {
+            $rss->enable_order_by_date(true);
             $maxitems = $rss->get_item_quantity(10);
             $rss_items = $rss->get_items(0, $maxitems);
 
@@ -1609,7 +1614,7 @@ function bodhi_get_live_exam_feed($limit = 10) {
                 $all_items[] = array(
                     'title'     => clean_rss_title($item->get_title()),
                     'link'      => $item->get_permalink(),
-                    'date'      => $item->get_date('U'), // Unix timestamp for sorting
+                    'date'      => $item->get_date('U'),
                     'date_pref' => $item->get_date('j M Y'),
                     'source'    => $source['source_name'] ?: 'LIVE'
                 );
@@ -1617,12 +1622,19 @@ function bodhi_get_live_exam_feed($limit = 10) {
         }
     }
 
+    if (empty($all_items)) {
+        return array();
+    }
+
     // Sort by date descending
     usort($all_items, function($a, $b) {
-        return $b['date'] - $a['date'];
+        return (isset($b['date']) && isset($a['date'])) ? $b['date'] - $a['date'] : 0;
     });
 
-    set_transient($cache_key, $all_items, HOUR_IN_SECONDS);
+    // Only set transient if we have results
+    if (!empty($all_items)) {
+        set_transient($cache_key, $all_items, HOUR_IN_SECONDS);
+    }
 
     return array_slice($all_items, 0, $limit);
 }
