@@ -18,62 +18,63 @@ get_header(); ?>
     <!-- Contact Content Wrapper -->
     <section class="section-padding" style="position: relative; z-index: 10; padding-top: 60px;">
         <div class="container">
-            <div class="contact-wrapper glass-card animate-fade-in" style="overflow: hidden; display: grid; grid-template-columns: 1fr 1.5fr; background: rgba(255,255,255,0.95); border-radius: 30px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); border: 1px solid rgba(255,255,255,0.8);">
+            <div class="contact-wrapper glass-card animate-fade-in" style="overflow: hidden; display: grid; grid-template-columns: 1fr 1.5fr; background: rgba(255,255,255,1); border-radius: 40px; box-shadow: 0 40px 100px rgba(0,0,0,0.08); border: 1px solid rgba(255,255,255,0.8);">
                 
                 <!-- Left: Contact Info (Teal Gradient) -->
-                <div class="contact-info" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); padding: 60px; color: white; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;">
+                <div class="contact-info" style="background: linear-gradient(135deg, #004d40, #00695c); padding: 80px 60px; color: white; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;">
                     <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: url('https://www.transparenttextures.com/patterns/cubes.png'); opacity: 0.05;"></div>
                     <div style="position: relative; z-index: 1;">
-                        <h3 style="color: white; margin-bottom: 40px; font-size: 2.5rem; font-weight: 800;">Let's Connect</h3>
-                        <p style="margin-bottom: 40px; opacity: 0.8; font-size: 1.1rem;">Whether you are a student or a parent, we are here to guide you toward enlightenment and success.</p>
+                        <span style="color: var(--accent); font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 3px; display: block; margin-bottom: 15px;">Get In Touch</span>
+                        <h3 style="color: white; margin-bottom: 30px; font-size: 3rem; font-weight: 800; line-height: 1.1;">Let's <br>Connect</h3>
+                        <p style="margin-bottom: 50px; opacity: 0.85; font-size: 1.1rem; line-height: 1.6;">Whether you are a student or a parent, we are here to guide you toward enlightenment and success.</p>
                         
-                        <div class="info-item" style="margin-bottom: 35px; display: flex; gap: 20px;">
-                            <div style="width: 55px; height: 55px; background: rgba(255,255,255,0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1.4rem; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="info-item" style="margin-bottom: 45px; display: flex; gap: 25px; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1.6rem; border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div>
-                                <h4 style="color:white; font-size:1.1rem; margin-bottom:8px; font-weight: 700;">Location</h4>
-                                <p style="font-size: 0.95rem; opacity: 0.85; line-height: 1.7; white-space: pre-line;">
+                                <h4 style="color:white; font-size:1.2rem; margin-bottom:8px; font-weight: 700;">Location</h4>
+                                <p style="font-size: 1rem; opacity: 0.9; line-height: 1.7; white-space: pre-line;">
                                     <?php echo get_field('contact_address') ?: "Bodhi Academy, 2nd Floor,\nNear Kaloor Metro Station,\nKochi, Kerala, 682017"; ?>
                                 </p>
                             </div>
                         </div>
                         
-                        <div class="info-item" style="margin-bottom: 35px; display: flex; gap: 20px;">
-                            <div style="width: 55px; height: 55px; background: rgba(255,255,255,0.1); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1.4rem; border: 1px solid rgba(255,255,255,0.2);">
+                        <div class="info-item" style="margin-bottom: 45px; display: flex; gap: 25px; align-items: flex-start;">
+                            <div style="width: 60px; height: 60px; background: rgba(255,255,255,0.1); border-radius: 20px; display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; font-size: 1.6rem; border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
                             <div>
-                                <h4 style="color:white; font-size:1.1rem; margin-bottom:8px; font-weight: 700;">Call Us</h4>
-                                <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 5px;"><?php echo get_field('contact_phone_1') ?: '+91 98765 43210'; ?></p>
-                                <p style="font-size: 0.95rem; opacity: 0.85;"><?php echo get_field('contact_phone_2') ?: '0484 - 2345678'; ?></p>
+                                <h4 style="color:white; font-size:1.2rem; margin-bottom:8px; font-weight: 700;">Call Us</h4>
+                                <p style="font-size: 1.2rem; font-weight: 700; margin-bottom: 5px; color: white;"><?php echo get_field('contact_phone_1') ?: '+91 98765 43210'; ?></p>
+                                <p style="font-size: 1rem; opacity: 0.85;"><?php echo get_field('contact_phone_2') ?: '0484 - 2345678'; ?></p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Social Presence -->
-                    <div style="position: relative; z-index: 1; background: rgba(255,255,255,0.05); padding: 25px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);">
-                        <p style="margin-bottom: 20px; font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; color: var(--accent);">Follow Our Success</p>
+                    <div style="position: relative; z-index: 1;">
+                        <p style="margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; color: var(--accent);">Follow Our Success</p>
                         <div style="display: flex; gap: 15px;">
                             <?php 
                             $fb = get_field('contact_fb') ?: '#';
                             $ig = get_field('contact_ig') ?: '#';
-                            $tw = get_field('contact_tw') ?: '#';
                             $li = get_field('contact_li') ?: '#';
                             ?>
-                            <a href="<?php echo $fb; ?>" class="social-icon" style="width: 45px; height: 45px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);"><i class="fab fa-facebook-f"></i></a>
-                            <a href="<?php echo $ig; ?>" class="social-icon" style="width: 45px; height: 45px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);"><i class="fab fa-instagram"></i></a>
-                            <a href="<?php echo $li; ?>" class="social-icon" style="width: 45px; height: 45px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="<?php echo $fb; ?>" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                            <a href="<?php echo $ig; ?>" class="social-btn"><i class="fab fa-instagram"></i></a>
+                            <a href="<?php echo $li; ?>" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right: Form Section -->
-                <div class="contact-form-section" style="padding: 70px; background: white;">
+                <div class="contact-form-section" style="padding: 80px; background: white;">
                     <div style="margin-bottom: 50px;">
-                        <span style="color: var(--accent); font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 3px;">Inquiry Hub</span>
-                        <h2 style="font-size: 2.8rem; color: var(--primary); margin: 10px 0 15px; font-weight: 800;">Send a Message</h2>
-                        <p style="color: #666; font-size: 1.1rem; line-height: 1.6;">Fill out the form below and our response team will get back to you within 24 hours.</p>
+                        <span style="color: var(--accent); font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 4px; display: block; margin-bottom: 10px;">Inquiry Hub</span>
+                        <h2 style="font-size: 3.2rem; color: var(--primary); margin: 0 0 20px; font-weight: 800; line-height: 1.1;">Send a Message</h2>
+                        <div style="width: 60px; height: 4px; background: var(--accent); border-radius: 2px; margin-bottom: 25px;"></div>
+                        <p style="color: #666; font-size: 1.15rem; line-height: 1.7;">Complete the details below and our team will get back to you shortly.</p>
                     </div>
                     
                     <div class="cf7-style-wrap">
@@ -84,56 +85,114 @@ get_header(); ?>
                     </div>
 
                     <style>
+                        .social-btn {
+                            width: 50px;
+                            height: 50px;
+                            background: rgba(255,255,255,1);
+                            border-radius: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: var(--primary);
+                            font-size: 1.2rem;
+                            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                            text-decoration: none;
+                            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                        }
+                        .social-btn:hover {
+                            transform: translateY(-8px) scale(1.1);
+                            background: var(--accent);
+                            color: var(--primary);
+                            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+                        }
+                        .cf7-style-wrap br { display: none; }
+                        .cf7-style-wrap label {
+                            display: block;
+                            font-weight: 700;
+                            color: var(--primary);
+                            margin-bottom: 10px;
+                            font-size: 0.95rem;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+                        .cf7-style-wrap span.wpcf7-form-control-wrap {
+                            display: block;
+                            margin-bottom: 25px;
+                        }
                         .cf7-style-wrap input[type="text"],
                         .cf7-style-wrap input[type="email"],
                         .cf7-style-wrap input[type="tel"],
                         .cf7-style-wrap select,
                         .cf7-style-wrap textarea {
                             width: 100%;
-                            padding: 18px 25px;
-                            border: 2px solid #f0f4f3;
-                            border-radius: 15px;
-                            background: #f8fbfa;
+                            padding: 20px 25px;
+                            border: 2px solid #edf2f1;
+                            border-radius: 18px;
+                            background: #f9fbfb;
                             font-family: inherit;
-                            font-size: 1rem;
+                            font-size: 1.05rem;
                             color: #333;
                             transition: all 0.3s ease;
-                            margin-bottom: 5px;
                         }
                         .cf7-style-wrap input:focus,
                         .cf7-style-wrap textarea:focus {
                             outline: none;
                             border-color: var(--primary);
                             background: #fff;
-                            box-shadow: 0 10px 25px rgba(0,91,79,0.05);
+                            box-shadow: 0 15px 35px rgba(0,77,64,0.08);
+                            transform: translateY(-2px);
                         }
-                        .cf7-style-wrap .btn-premium {
+                        .cf7-style-wrap .wpcf7-submit {
                             width: 100%;
-                            padding: 22px;
+                            padding: 24px;
                             background: var(--primary);
                             color: white;
                             border: none;
-                            border-radius: 15px;
+                            border-radius: 18px;
                             font-weight: 800;
-                            font-size: 1.1rem;
-                            letter-spacing: 1.5px;
+                            font-size: 1.2rem;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
                             cursor: pointer;
                             transition: all 0.4s ease;
-                            box-shadow: 0 15px 30px rgba(0,91,79,0.2);
+                            box-shadow: 0 20px 40px rgba(0,77,64,0.15);
+                            margin-top: 10px;
                         }
-                        .cf7-style-wrap .btn-premium:hover {
-                            background: var(--primary-dark);
+                        .cf7-style-wrap .wpcf7-submit:hover {
+                            background: #00332c;
                             transform: translateY(-5px);
-                            box-shadow: 0 20px 40px rgba(0,91,79,0.3);
+                            box-shadow: 0 25px 50px rgba(0,77,64,0.25);
                         }
-                        .wpcf7-spinner { float: right; margin-top: -50px; }
-                        .wpcf7-not-valid-tip { font-size: 0.8rem; color: #e74c3c; margin-top: 5px; }
-                        .wpcf7-response-output { 
-                            margin: 20px 0 0 !important; 
-                            border-radius: 12px !important; 
-                            padding: 15px 25px !important;
+                        /* CF7 Specifics */
+                        .wpcf7-spinner { float: right; margin-top: -60px; }
+                        .wpcf7-not-valid-tip { 
+                            font-size: 0.85rem; 
+                            color: #d32f2f; 
+                            margin-top: 8px; 
                             font-weight: 600;
+                            display: block;
+                        }
+                        .wpcf7-response-output { 
+                            margin: 30px 0 0 !important; 
+                            border: 2px solid var(--primary) !important;
+                            border-radius: 20px !important; 
+                            padding: 20px 30px !important;
+                            font-weight: 700;
                             text-align: center;
+                            background: #f0f7f6 !important;
+                            color: var(--primary) !important;
+                        }
+                        .wpcf7-not-valid .wpcf7-form-control {
+                            border-color: #d32f2f !important;
+                            background: #fff8f8 !important;
+                        }
+                        /* Responsive Adjustments */
+                        @media (max-width: 991px) {
+                            .contact-wrapper { grid-template-columns: 1fr !important; }
+                            .contact-info { padding: 60px 40px !important; }
+                            .contact-form-section { padding: 60px 40px !important; }
+                            .contact-info h3 { font-size: 2.5rem !important; }
+                            .contact-form-section h2 { font-size: 2.5rem !important; }
                         }
                     </style>
                 </div>
