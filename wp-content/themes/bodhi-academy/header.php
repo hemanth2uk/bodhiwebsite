@@ -36,38 +36,35 @@
         <!-- Global News Ticker -->
         <div class="news-ticker-wrapper" style="background: var(--primary-dark); padding: 12px 0; border-bottom: 2px solid var(--accent); overflow: hidden; position: relative; z-index: 1001;">
             <div class="container" style="display: flex; align-items: center; gap: 30px;">
-                <a href="<?php echo home_url('/news/'); ?>" class="news-label-link" style="text-decoration:none; display:block;">
+                <?php 
+                // Get the page ID for the Live Exam Alerts template
+                $alerts_page = get_pages(array(
+                    'meta_key' => '_wp_page_template',
+                    'meta_value' => 'page-live-alerts.php',
+                    'number' => 1
+                ));
+                $alerts_url = !empty($alerts_page) ? get_permalink($alerts_page[0]->ID) : home_url('/live-exam-alerts/');
+                ?>
+                <a href="<?php echo esc_url($alerts_url); ?>" class="news-label-link" style="text-decoration:none; display:block;">
                     <div class="news-label" style="background: var(--accent); color: #000; padding: 4px 15px; border-radius: 4px; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; white-space: nowrap; box-shadow: 0 4px 10px rgba(255,193,7,0.2);">
-                        <i class="fas fa-bullhorn" style="margin-right: 6px;"></i> <?php echo get_field('home_news_title', get_option('page_on_front')) ?: 'Latest Updates'; ?>
+                        <i class="fas fa-bullhorn" style="margin-right: 6px;"></i> <?php echo get_field('home_news_title', get_option('page_on_front')) ?: 'Live Exam Alerts'; ?>
                     </div>
                 </a>
-                <div class="ticker-content" style="flex: 1; overflow: hidden; position: relative; height: 24px;">
-                    <div class="ticker-inner animate-scroll" style="display: flex; gap: 80px; white-space: nowrap; align-items: center; color: white; font-weight: 500; font-size: 0.9rem;">
+                <div class="ticker-content" style="flex: 1; overflow: hidden; position: relative; height: 30px;">
+                    <div class="ticker-inner animate-scroll" style="display: flex; gap: 60px; white-space: nowrap; align-items: center; color: white; font-weight: 500; font-size: 0.95rem; height: 100%;">
                         
-                        <!-- Manual News from ACF -->
-                        <?php for($i=1; $i<=3; $i++) : 
-                            $news = get_field('home_news_'.$i, get_option('page_on_front'));
-                            $link = get_field('home_news_'.$i.'_link', get_option('page_on_front'));
-                            if($news) : ?>
-                                <?php if($link) : ?>
-                                    <a href="<?php echo esc_url($link); ?>" style="color:white; text-decoration:none;" class="ticker-item-link">
-                                        <?php echo esc_html($news); ?>
-                                    </a>
-                                <?php else : ?>
-                                    <span><?php echo esc_html($news); ?></span>
-                                <?php endif; ?>
-                            <?php endif;
-                        endfor; ?>
-
-                        <!-- Live Feed from External RSS -->
+                        <!-- Live Feed from External RSS (Priority & Lively) -->
                         <?php 
-                        $live_feed = bodhi_get_live_exam_feed(5);
+                        $live_feed = bodhi_get_live_exam_feed(25);
                         if($live_feed) : 
                             foreach($live_feed as $item) : ?>
-                                <a href="<?php echo esc_url($item['link']); ?>" target="_blank" style="color:white; text-decoration:none;" class="ticker-item-link">
-                                    <span style="background:red; color:white; padding:2px 6px; border-radius:3px; font-size:0.7rem; font-weight:bold; margin-right:8px; vertical-align:middle;">LIVE</span>
+                                <a href="<?php echo esc_url($item['link']); ?>" target="_blank" style="color:white; text-decoration:none; display:flex; align-items:center;" class="ticker-item-link" title="Official: <?php echo esc_attr($item['source']); ?>">
+                                    <span style="background:#ff3b30; color:white; padding:2px 8px; border-radius:4px; font-size:0.65rem; font-weight:800; margin-right:10px; border:1px solid rgba(255,255,255,0.2);">LIVE</span>
+                                    <span style="color:var(--accent); font-weight:700; margin-right:8px; font-size:0.8rem;">[<?php echo esc_html($item['source']); ?>]</span>
                                     <?php echo esc_html($item['title']); ?>
+                                    <i class="fas fa-external-link-alt" style="margin-left:8px; font-size:0.7rem; opacity:0.6;"></i>
                                 </a>
+                                <span style="color:rgba(255,255,255,0.2);">|</span>
                             <?php endforeach;
                         endif; ?>
 

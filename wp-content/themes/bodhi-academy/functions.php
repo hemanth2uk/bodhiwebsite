@@ -163,45 +163,24 @@ if( function_exists('acf_add_local_field_group') ):
             ),
             array(
                 'key' => 'field_home_news_1',
-                'label' => 'News Item 1 Text',
+                'label' => 'Academy Update 1',
                 'name' => 'home_news_1',
                 'type' => 'text',
-                'default_value' => 'NEET UG 2026: Registration LIVE - Ends March 8, 2026',
-            ),
-            array(
-                'key' => 'field_home_news_1_link',
-                'label' => 'News Item 1 Link',
-                'name' => 'home_news_1_link',
-                'type' => 'text',
-                'instructions' => 'Optional link for this item.',
+                'default_value' => 'Admissions Open for 2026 Batch',
             ),
             array(
                 'key' => 'field_home_news_2',
-                'label' => 'News Item 2 Text',
+                'label' => 'Academy Update 2',
                 'name' => 'home_news_2',
                 'type' => 'text',
-                'default_value' => 'JEE Main 2026 (Session 2): Registration LIVE - Ends Feb 25',
-            ),
-            array(
-                'key' => 'field_home_news_2_link',
-                'label' => 'News Item 2 Link',
-                'name' => 'home_news_2_link',
-                'type' => 'text',
-                'instructions' => 'Optional link for this item.',
+                'default_value' => 'Free Counseling Session Every Sunday',
             ),
             array(
                 'key' => 'field_home_news_3',
-                'label' => 'News Item 3 Text',
+                'label' => 'Academy Update 3',
                 'name' => 'home_news_3',
                 'type' => 'text',
-                'default_value' => 'ISI Admission Test 2026: Registration LIVE - Exam May 10',
-            ),
-            array(
-                'key' => 'field_home_news_3_link',
-                'label' => 'News Item 3 Link',
-                'name' => 'home_news_3_link',
-                'type' => 'text',
-                'instructions' => 'Optional link for this item.',
+                'default_value' => 'New Batch Starts First Monday of June',
             ),
         ),
         'location' => array(
@@ -1531,12 +1510,47 @@ add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
                 'type' => 'tab',
             ),
             array(
-                'key' => 'field_rss_feed_url',
-                'label' => 'RSS Feed URL',
-                'name' => 'live_exam_rss_url',
-                'type' => 'url',
-                'instructions' => 'External RSS feed for exam notifications (e.g. Manorama Education).',
-                'default_value' => 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml',
+                'key' => 'field_rss_sources',
+                'label' => 'RSS Feed Sources',
+                'name' => 'live_exam_rss_sources',
+                'type' => 'repeater',
+                'instructions' => 'Add multiple RSS feeds (e.g. Manorama Education, TOI Exam News, etc.)',
+                'layout' => 'table',
+                'button_label' => 'Add Source',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_source_name',
+                        'label' => 'Source Name',
+                        'name' => 'source_name',
+                        'type' => 'text',
+                        'placeholder' => 'e.g. Kerala State / CBSE',
+                    ),
+                    array(
+                        'key' => 'field_source_url',
+                        'label' => 'Feed URL',
+                        'name' => 'feed_url',
+                        'type' => 'url',
+                        'required' => 1,
+                    ),
+                ),
+                'default_value' => array(
+                    array(
+                        'source_name' => 'KERALA STATE',
+                        'feed_url' => 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml',
+                    ),
+                    array(
+                        'source_name' => 'CBSE NEWS',
+                        'feed_url' => 'https://news.google.com/rss/search?q=CBSE+exam+notifications+official+when:7d&hl=en-IN&gl=IN&ceid=IN:en',
+                    ),
+                    array(
+                        'source_name' => 'ICSE NEWS',
+                        'feed_url' => 'https://news.google.com/rss/search?q=ICSE+ISC+exam+notifications+official+when:7d&hl=en-IN&gl=IN&ceid=IN:en',
+                    ),
+                    array(
+                        'source_name' => 'ENTRANCE',
+                        'feed_url' => 'https://news.google.com/rss/search?q=NEET+JEE+KEAM+exam+notifications+when:7d&hl=en-IN&gl=IN&ceid=IN:en',
+                    )
+                ),
             ),
         ),
         'location' => array(
@@ -1558,36 +1572,64 @@ add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
     add_action( 'after_switch_theme', 'bodhi_flush_news_rewrites' );
 
 /**
- * Fetch and parse Live Exam Feed from RSS
+ * Fetch and parse Aggregated Live Exam Feed from multiple RSS sources
  */
-function bodhi_get_live_exam_feed($limit = 5) {
+function bodhi_get_live_exam_feed($limit = 10) {
     if ( !function_exists('fetch_feed') ) {
         include_once(ABSPATH . WPINC . '/feed.php');
     }
 
-    $rss_url = get_field('live_exam_rss_url', 'options');
-    if (!$rss_url) {
-        $rss_url = 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml';
+    // Use transient to cache results for 1 hour to avoid slow page loads
+    $cache_key = 'bodhi_live_exam_feed_v2';
+    $cached_items = get_transient($cache_key);
+    if ($cached_items !== false) {
+        return array_slice($cached_items, 0, $limit);
     }
 
-    $rss = fetch_feed($rss_url);
-    $items = array();
+    $all_items = array();
+    $sources = get_field('live_exam_rss_sources', 'options');
 
-    if ( !is_wp_error($rss) ) {
-        $maxitems = $rss->get_item_quantity($limit);
-        $rss_items = $rss->get_items(0, $maxitems);
+    // Default if empty
+    if (!$sources) {
+        $sources = array(
+            array(
+                'source_name' => 'KERALA NEWS',
+                'feed_url' => 'https://www.manoramaonline.com/sitemap/google-news-education-news/jcr:content/mm-section-full-parsys/google_news_feed.xml'
+            )
+        );
+    }
 
-        foreach ( $rss_items as $item ) {
-            $title = $item->get_title();
-            // Optional: Clean title if needed
-            $items[] = array(
-                'title' => $title,
-                'link'  => $item->get_permalink(),
-                'date'  => $item->get_date('j M Y'),
-                'source'=> 'LIVE'
-            );
+    foreach ($sources as $source) {
+        $rss = fetch_feed($source['feed_url']);
+        if ( !is_wp_error($rss) ) {
+            $maxitems = $rss->get_item_quantity(10);
+            $rss_items = $rss->get_items(0, $maxitems);
+
+            foreach ( $rss_items as $item ) {
+                $all_items[] = array(
+                    'title'     => clean_rss_title($item->get_title()),
+                    'link'      => $item->get_permalink(),
+                    'date'      => $item->get_date('U'), // Unix timestamp for sorting
+                    'date_pref' => $item->get_date('j M Y'),
+                    'source'    => $source['source_name'] ?: 'LIVE'
+                );
+            }
         }
     }
 
-    return $items;
+    // Sort by date descending
+    usort($all_items, function($a, $b) {
+        return $b['date'] - $a['date'];
+    });
+
+    set_transient($cache_key, $all_items, HOUR_IN_SECONDS);
+
+    return array_slice($all_items, 0, $limit);
+}
+
+/**
+ * Clean up RSS titles (optional)
+ */
+function clean_rss_title($title) {
+    return wp_strip_all_tags(html_entity_decode($title));
 }
