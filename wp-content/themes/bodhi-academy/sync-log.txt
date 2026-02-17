@@ -1,0 +1,30 @@
+Starting Sync...
+Found existing page: Bodhi Online (ID: 65)
+Found existing page: Offline Centers (ID: 66)
+Found existing page: Integrated Schools (ID: 67)
+Targeting Menu ID: 3
+Menu Name: Primary Menu
+Found 12 items in menu
+Checking item ID 16: [Home] (Parent: 0) URL: http://localhost/bodhiwebsite/
+Checking item ID 17: [About Us] (Parent: 0) URL: http://localhost/bodhiwebsite/about-us/
+Checking item ID 18: [Courses] (Parent: 0) URL: http://localhost/bodhiwebsite/courses/
+Checking item ID 20: [Scholarship] (Parent: 0) URL: http://localhost/bodhiwebsite/scholarship/
+Checking item ID 21: [Blogs] (Parent: 0) URL: http://localhost/bodhiwebsite/blogs/
+Checking item ID 22: [News] (Parent: 0) URL: http://localhost/bodhiwebsite/news/
+Checking item ID 23: [Careers] (Parent: 0) URL: http://localhost/bodhiwebsite/careers/
+Checking item ID 24: [Contact Us] (Parent: 0) URL: http://localhost/bodhiwebsite/contact-us/
+Checking item ID 68: [Bodhi Online] (Parent: 19) URL: http://localhost/bodhiwebsite/bodhi-online/
+Checking item ID 69: [Offline Centers] (Parent: 19) URL: http://localhost/bodhiwebsite/offline-centers/
+Checking item ID 70: [Integrated Schools] (Parent: 19) URL: http://localhost/bodhiwebsite/integrated-schools/
+Checking item ID 19: [PROGRAMMES] (Parent: 0) URL: #
+MATCH FOUND! Target Item ID: 19
+Renamed menu item ID 19 to PROGRAMMES
+Proceeding to add sub-items for parent 19...
+Sub-item Bodhi Online already exists for parent 19
+Sub-item Offline Centers already exists for parent 19
+Sub-item Integrated Schools already exists for parent 19
+Populating ACF Content...
+Populated fields for Bodhi Online
+Populated fields for Offline Centers
+Populated fields for Integrated Schools
+Sync Complete!

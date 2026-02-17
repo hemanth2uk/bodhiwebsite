@@ -1,0 +1,591 @@
+--- START: About Us.docx ---
+
+About us
+      Bodhi Education is Kerala’s pioneering educational research and development platform, dedicated to empowering students by enhancing their skills and unlocking their true potential. We support the students to attain their goals. Comprising a dynamic team of academic experts, researchers, and technocrats, we collaborate to design innovative strategies and cutting-edge technologies that revolutionize India’s education sector. 
+    Bodhi believes that, "every child has his/her own uniqueness". Find and shape them as future talents are the real task. Bodhi Education envisions itself as a unique and dynamic human resource development initiative dedicated to empowering students through a highly sophisticated coaching and support ecosystem. We aim to identify, strengthen, and refine the innate abilities of every learner, enabling them to dream confidently and achieve excellence in their chosen professional careers.
+Through integrated academic excellence, mentorship-driven guidance, technology-enabled learning, and value-based education, Bodhi Education seeks to create competent, confident, and socially responsible professionals who contribute meaningfully to society.
+Bodhi devoted to build a strong foundation in child through the professional academic endeavours and best coaching practices. With an ultimate aim to mould and support the students, Bodhi designs a unique coaching pattern which is ideal for nurturing academic excellence among students. 
+      The programmes are offered for the standard 6 to 12 students to build them with sound subject base, vibrant problem solving skills and competitive exam skills. We aim, to strengthen the student's   mathematical skills, competitive mind set, confidence and courage to crack their ambitions.
+Our online - offline combination and learning app help the students to reach their best in well organised coaching programmes. The blunt of most effective classroom teaching supplemented by recorded classes, live online sessions, doubt clearance sessions , discussions, mock exams, self evaluations through the learning app. The combined programme helps our students to prepare their own strategy and schedule for their coaching by utilising valuable time in a more meaningful way.
+The programmes such as “Bodhi Science Centres”, “Integrated schools”, Online learning programme and “Empower Her”  were the innovative programmes to fullfill the ultimate goal of Bodhi.
+The motto of the programme is to provide the best quality  classes, students support, mentorship and high-power coaching to create a strong community of younger  population with high capacity, skill and talent. It aims to provide a highly  specialised and sophisticated coaching and support for the students to fine tune their innate abilities. 
+
+--- END: About Us.docx ---
+
+--- START: Blogs .docx ---
+
+BLOGS
+Blog No: 1 - CBSE Onscreen Marking (OSM)- The Complete Guide
+What is CBSE OSM?
+OSM stands for On-Screen Marking. It is the digital system used by the CBSE Board to evaluate answer scripts for Class 10 and 12. Instead of teachers manually correcting physical paper booklets, the entire process is moved to a secure digital platform.
+How the Process Works
+Scanning: Once the exam is over, all answer booklets are collected and sent to regional centers where they are scanned at high resolution.
+Digital Distribution: The scanned copies are uploaded to a secure server. These digital scripts are then distributed electronically to examiners across the country.
+On-Screen Evaluation: Examiners log into a secure system and mark the answers using a computer. They use a mouse or a stylus to tick, underline, and award marks for each step.
+Automatic Tabulation: The software automatically adds up the marks, eliminating any human error in totaling.
+
+Why is this important for students?
+Understanding OSM helps a student change the way they present their answers to ensure they get the maximum marks.
+Clarity is Key: Since the examiner sees a scanned image of your paper, your handwriting and diagrams must be clear. Light pencil work or faint handwriting may not scan well, making it difficult for the examiner to read.
+Structured Answering: The OSM software often displays the marking scheme alongside the student’s answer. Students should write in points and use headings, making it easier for the examiner to match their points with the marking scheme.
+Margin Discipline: Students must avoid writing in the margins or near the edges of the paper. During the scanning process, information written on the very edge of the page might get cropped out.
+Step Marking: The system allows examiners to award marks for every correct step. Even if the final answer is wrong, the digital interface makes it very easy for the teacher to see and reward your intermediate steps.
+Significance of OSM
+Transparency: It reduces the chances of bias or manipulation.
+Zero Errors: It removes the risk of "un-evaluated questions" or "totaling mistakes."
+Faster Results: Digital marking significantly speeds up the evaluation process, leading to earlier result declarations.
+Student Checklist: Formatting Answer Sheets for OSM
+Since your answer script will be scanned and viewed on a digital screen by the examiner, your presentation must be "scanner-friendly." Follow these essential guidelines:
+1. Choice of Stationery
+Use Blue or Black Ballpoint Pen: These provide the best contrast for high-resolution scanning. Avoid gel pens or ink pens as they can smudge or bleed through the paper.
+Dark Pencils for Diagrams: Use a dark pencil (like HB or 2B) for all drawings. If the pencil work is too light, it may appear invisible or faint on the examiner’s screen.
+Avoid Whitener: Do not use correction fluid. If you make a mistake, simply put a single horizontal line through it.
+2. Layout and Margins
+Respect the Borders: Never write anything in the margins or at the very edge of the page. During scanning, text near the edges can be cropped out or lost.
+Question Numbers: Clearly write the question number in the designated area. Make sure it is bold and legible so the examiner can instantly identify the answer.
+3. Handwriting and Clarity
+Maintain Spacing: Leave sufficient space between words and lines. A cluttered page is much harder to read on a computer screen than on physical paper.
+Legibility: If your handwriting is naturally small, try to write slightly larger and clearer for the digital format.
+4. Structuring for the Screen
+Use Bullet Points: Examiners often view your answer alongside a digital marking scheme. Using bullet points and sub-headings makes it easier for them to tick off your correct points.
+Underline Key Terms: Use a pen to underline keywords or final answers. This draws the examiner's eye immediately to the most important parts of your response.
+5. Diagrams and Graphs
+Label with Pen: While you draw with a pencil, try to label your diagrams with a pen. This ensures the labels remain sharp and readable after scanning.
+Clear Graph Points: On graph paper, ensure your plotted points are dark and your scales are clearly written.
+6. Finishing Touches
+Tie Sheets Securely: Use the provided thread to tie additional sheets firmly but not too tightly. Avoid stapling, as staples can jam the high-speed scanners or damage the paper during the digitization process.
+Check the OMR Front Page: Ensure your Roll Number and Subject Code are bubbled accurately and darkly. This is how the system links the digital file to your identity.
+
+Pro-Tip: Imagine you are looking at a photo of your paper on a phone screen. If it looks clear and organized there, it will look great for the examiner too!
+
+
+Blog 1 - മലയാളത്തിൽ വായിക്കു
+എന്താണ് CBSE OSM?
+OSM എന്നാൽ On-Screen Marking എന്നാണ് അർത്ഥമാക്കുന്നത്. സി.ബി.എസ്.ഇ (CBSE) 10, 12 ക്ലാസ്സുകളിലെ ഉത്തരക്കടലാസുകൾ മൂല്യനിർണ്ണയം നടത്തുന്ന ഡിജിറ്റൽ സംവിധാനമാണിത്. അധ്യാപകർ നേരിട്ട് പേപ്പറിൽ മാർക്കിടുന്ന പഴയ രീതിക്ക് പകരം, ഉത്തരക്കടലാസുകൾ ഒരു സുരക്ഷിത ഡിജിറ്റൽ പ്ലാറ്റ്‌ഫോം വഴി മൂല്യനിർണ്ണയം നടത്തുന്നു.
+ഇതിന്റെ പ്രവർത്തന രീതി:
+സ്കാനിംഗ് (Scanning): പരീക്ഷയ്ക്ക് ശേഷം ഉത്തരക്കടലാസുകൾ ശേഖരിച്ച് റീജിയണൽ സെന്ററുകളിൽ എത്തിച്ച് ഉയർന്ന നിലവാരത്തിൽ സ്കാൻ ചെയ്യുന്നു.
+ഡിജിറ്റൽ വിതരണം: സ്കാൻ ചെയ്ത കോപ്പികൾ ഒരു സുരക്ഷിത സെർവറിലേക്ക് അപ്‌ലോഡ് ചെയ്യും. അവിടെ നിന്നും രാജ്യത്തുടനീളമുള്ള മൂല്യനിർണ്ണയക്കാർക്ക് (Examiners) ഇവ ഇലക്ട്രോണിക് രീതിയിൽ അയച്ചുകൊടുക്കുന്നു.
+ഓൺ-സ്ക്രീൻ മൂല്യനിർണ്ണയം: അധ്യാപകർ കമ്പ്യൂട്ടർ വഴി ലോഗിൻ ചെയ്ത് മൗസോ സ്റ്റൈലസോ ഉപയോഗിച്ച് ഓരോ ഉത്തരവും പരിശോധിച്ച് മാർക്ക് നൽകുന്നു.
+ഓട്ടോമാറ്റിക് ടാബുലേഷൻ: മാർക്കുകൾ കമ്പ്യൂട്ടർ തന്നെ സ്വയം കൂട്ടുന്നത് കൊണ്ട് ടോട്ടൽ ചെയ്യുന്നതിൽ വരുന്ന മനുഷ്യസഹജമായ പിശകുകൾ ഒഴിവാകുന്നു.
+
+വിദ്യാർത്ഥികൾ ഇത് അറിഞ്ഞിരിക്കേണ്ടത് എന്തുകൊണ്ട്?
+OSM രീതിയെക്കുറിച്ച് വ്യക്തമായ ധാരണയുണ്ടെങ്കിൽ, കൂടുതൽ മാർക്ക് ലഭിക്കുന്ന രീതിയിൽ ഉത്തരക്കടലാസ് തയ്യാറാക്കാൻ വിദ്യാർത്ഥികൾക്ക് സാധിക്കും.
+വ്യക്തത പ്രധാനം: അധ്യാപകർ നിങ്ങളുടെ പേപ്പറിന്റെ സ്കാൻ ചെയ്ത ചിത്രമാണ് കാണുന്നത്. അതിനാൽ കൈയക്ഷരവും ചിത്രങ്ങളും വളരെ വ്യക്തമായിരിക്കണം. നേർത്ത പെൻസിൽ ഉപയോഗിച്ചോ മങ്ങിയ മഷിയാലോ എഴുതുന്നത് സ്കാൻ ചെയ്യുമ്പോൾ വ്യക്തമാകില്ല.
+ചിട്ടയായ അവതരണം: പലപ്പോഴും അധ്യാപകർക്ക് സ്ക്രീനിൽ മാർക്കിംഗ് സ്കീമും നിങ്ങളുടെ ഉത്തരവും ഒരേസമയം കാണാൻ സാധിക്കും. അതുകൊണ്ട് ഉത്തരങ്ങൾ പോയിന്റുകളായി എഴുതുന്നതും തലക്കെട്ടുകൾ നൽകുന്നതും മാർക്ക് ലഭിക്കാൻ എളുപ്പമാകും.
+മാർജിൻ അച്ചടക്കം: പേപ്പറിന്റെ മാർജിനിലോ വശങ്ങളിലോ ആയി ഒന്നും എഴുതാതിരിക്കാൻ ശ്രദ്ധിക്കുക. സ്കാൻ ചെയ്യുമ്പോൾ പേപ്പറിന്റെ അറ്റത്തുള്ള ഭാഗങ്ങൾ കട്ടായി പോകാൻ സാധ്യതയുണ്ട്.
+സ്റ്റെപ്പ് മാർക്കിംഗ്: ഓരോ ശരിയായ ഘട്ടത്തിനും (Step) മാർക്ക് നൽകാൻ ഈ സംവിധാനം സഹായിക്കുന്നു. അവസാന ഉത്തരം തെറ്റിയാലും ഇടയിലുള്ള ശരിയായ സ്റ്റെപ്പുകൾക്ക് കൃത്യമായി മാർക്ക് ലഭിക്കുന്നു എന്ന് ഡിജിറ്റൽ പ്ലാറ്റ്‌ഫോം ഉറപ്പാക്കുന്നു.
+
+OSM-ന്റെ ഗുണങ്ങൾ:
+സുതാര്യത: മൂല്യനിർണ്ണയത്തിൽ വിവേചനമോ തിരിമറികളോ ഉണ്ടാകാനുള്ള സാധ്യത കുറയ്ക്കുന്നു.
+പിശകുകൾ ഇല്ല: ചോദ്യങ്ങൾ നോക്കാതെ പോകുകയോ മാർക്കുകൾ കൂട്ടിയതിൽ തെറ്റ് വരികയോ ചെയ്യുന്നത് പൂർണ്ണമായും ഒഴിവാക്കാം.
+വേഗത്തിലുള്ള ഫലം: പേപ്പറുകൾ ഒരിടത്ത് നിന്ന് മറ്റൊരിടത്തേക്ക് കൊണ്ടുപോകുന്ന സമയം ലാഭിക്കുന്നത് വഴി ഫലം നേരത്തെ പ്രസിദ്ധീകരിക്കാൻ സാധിക്കുന്നു.
+ഉത്തരക്കടലാസ് തയ്യാറാക്കുമ്പോൾ ശ്രദ്ധിക്കേണ്ട കാര്യങ്ങൾ (Student Checklist for OSM)
+സ്കാനിംഗ് പ്രക്രിയയിലൂടെയാണ് നിങ്ങളുടെ പേപ്പർ മൂല്യനിർണ്ണയം നടത്തുന്നത് എന്നതുകൊണ്ട് താഴെ പറയുന്ന കാര്യങ്ങൾ പ്രത്യേകം ശ്രദ്ധിക്കുക:
+1. എഴുതാൻ ഉപയോഗിക്കുന്ന പേന (Choice of Pen)
+നീല അല്ലെങ്കിൽ കറുപ്പ് ബോൾ പോയിന്റ് പേന മാത്രം ഉപയോഗിക്കുക.
+ഇങ്ക് പേനയോ ജെൽ പേനയോ ഉപയോഗിക്കുന്നത് ഒഴിവാക്കുക (അവ സ്കാൻ ചെയ്യുമ്പോൾ മഷ പടരാൻ സാധ്യതയുണ്ട്).
+വളരെ മങ്ങിയ നിറത്തിലുള്ള മഷി ഉപയോഗിക്കരുത്.
+2. വ്യക്തമായ കൈയക്ഷരം (Legibility)
+വാക്കുകൾക്കിടയിൽ കൃത്യമായ അകലം പാലിക്കുക.
+തിരുത്തലുകൾ വരുത്തുമ്പോൾ പേപ്പർ വൃത്തികേടാക്കാതെ ഒരു വര കൊണ്ട് വെട്ടുക. വൈറ്റ്നർ (Whitener) ഉപയോഗിക്കുന്നത് സ്കാനിംഗിനെ ബാധിച്ചേക്കാം.
+3. ചിത്രങ്ങളും ഗ്രാഫുകളും (Diagrams & Graphs)
+ചിത്രങ്ങൾ വരയ്ക്കാൻ ഇരുണ്ട (Dark) പെൻസിൽ (HB അല്ലെങ്കിൽ 2B) ഉപയോഗിക്കുക.
+ലേബൽ ചെയ്യാൻ പേന ഉപയോഗിക്കുന്നത് നന്നായിരിക്കും, കാരണം സ്കാനിംഗിൽ പെൻസിൽ കൊണ്ടുള്ള എഴുത്തുകൾ ചിലപ്പോൾ മങ്ങിപ്പോകാൻ സാധ്യതയുണ്ട്.
+ഗ്രാഫുകൾ വരയ്ക്കുമ്പോൾ പോയിന്റുകൾ വ്യക്തമായി അടയാളപ്പെടുത്തുക.
+4. മാർജിൻ പാലിക്കുക (Margin Discipline)
+പേപ്പറിന്റെ വശങ്ങളിൽ നൽകിയിട്ടുള്ള മാർജിനുള്ളിൽ മാത്രം എഴുതുക.
+പേപ്പറിന്റെ ഏറ്റവും അറ്റത്തായി (Edges) ഉത്തരങ്ങൾ എഴുതരുത്. സ്കാനിംഗ് സമയത്ത് അരികുകളിലുള്ള ഭാഗങ്ങൾ കട്ടായി പോകാൻ സാധ്യതയുണ്ട്.
+5. ഉത്തരങ്ങളുടെ ക്രമം (Structure of Answers)
+ഓരോ ഉത്തരത്തിനും കൃത്യമായ ചോദ്യ നമ്പർ (Question Number) നൽകുക.
+ഉത്തരങ്ങൾ പോയിന്റുകളായി എഴുതുക. പ്രധാനപ്പെട്ട ഭാഗങ്ങൾ അടിവരയിടുക (Underline). ഇത് സ്ക്രീനിൽ നോക്കി മാർക്കിടുന്ന അധ്യാപകർക്ക് പെട്ടെന്ന് ശ്രദ്ധിക്കാൻ സഹായിക്കും.
+6. പുതിയ പേജ് ഉപയോഗിക്കുക (Space Management)
+ഓരോ സെക്ഷനും (Section) പുതിയ പേജിൽ തുടങ്ങാൻ ശ്രമിക്കുക.
+രണ്ട് ഉത്തരങ്ങൾക്കിടയിൽ കൃത്യമായ സ്ഥലം വിടുക.
+
+പരീക്ഷയ്ക്ക് മുൻപ് ശ്രദ്ധിക്കാൻ:
+ഒന്നാം പേജിലെ വിവരങ്ങൾ (Roll Number, Subject Code etc.) തെറ്റുകൂടാതെയും വ്യക്തമായും പൂരിപ്പിക്കുക.
+അധികമായി വാങ്ങുന്ന പേപ്പറുകൾ (Additional Sheets) കൃത്യമായി നൂലുകൊണ്ട് കെട്ടുക. സ്റ്റേപ്പിൾ ചെയ്യുന്നത് സ്കാനിംഗ് മെഷീനിൽ തടസ്സമുണ്ടാക്കാൻ സാധ്യതയുണ്ട്.
+ഈ കാര്യങ്ങൾ ശ്രദ്ധിക്കുന്നത് വഴി നിങ്ങളുടെ ഉത്തരക്കടലാസ് മികച്ച രീതിയിൽ സ്കാൻ ചെയ്യപ്പെടുമെന്നും അധ്യാപകർക്ക് മൂല്യനിർണ്ണയം എളുപ്പമാകുമെന്നും ഉറപ്പാക്കാം.
+
+
+
+
+
+Blog 2: - NEET UG 2026 - English 
+For NEET UG 2026, the official notification has been released and registration is currently live. Since you are aiming for this cycle, here is the most current and vital information you need to stay on track.
+
+1. Important Dates (Mark Your Calendar)
+The registration window is currently open. Do not wait until the last minute to avoid server issues.
+Registration Started: February 8, 2026
+Last Date to Apply: March 8, 2026 (9:00 PM)
+Last Date for Fee Payment: March 8, 2026 (11:50 PM)
+Correction Window: March 10 – March 12, 2026
+Admit Card Release: Expected late April 2026
+Exam Date: May 3, 2026 (Sunday)
+Exam Timing: 2:00 PM to 5:00 PM (3 hours)
+Result Declaration: Expected in June 2026
+
+2. Big Changes for 2026
+NTA has introduced some high-tech updates this year to improve security and transparency:
+Aadhaar-based eKYC: For the first time, registration involves mandatory Aadhaar-based electronic authentication. Ensure your Aadhaar is linked to an active mobile number.
+Live Photo Capture: Instead of just uploading a pre-clicked photo, the application portal will capture a live photograph of you via webcam or smartphone to prevent impersonation.
+No Optional Questions: Unlike recent years, the "Section B" internal choice (where you could pick 10 out of 15 questions) has been removed. All 180 questions are now compulsory.
++1
+Reduced Duration: The exam duration is now strictly 3 hours (180 minutes) for 180 questions, down from the previous 3 hours and 20 minutes.
+
+3. Exam Pattern & Marking
+Feature
+Details
+Mode
+Offline (Pen and Paper / OMR)
+Total Marks
+720
+Question Count
+180 (45 Physics, 45 Chemistry, 90 Biology)
+Marking Scheme
++4 for correct, -1 for incorrect, 0 for unattempted
+Languages
+13 languages (including English, Hindi, and Malayalam)
+
+4. Eligibility & Fees
+Age: You must be at least 17 years old by December 31, 2026 (Born on or before Dec 31, 2009). There is no upper age limit.
++1
+Qualifying Marks: 12th Pass with Physics, Chemistry, Biology/Biotechnology, and English.
+General: 50% aggregate in PCB.
+OBC/SC/ST: 40% aggregate in PCB.
+Application Fee:
+General: ₹1,700
+General-EWS/OBC-NCL: ₹1,600
+SC/ST/PwBD/Third Gender: ₹1,000
+
+5. Documents Required for Upload
+Passport Size Photo: White background, 80% face coverage, ears visible (10–200 KB).
+Postcard Size Photo: (4"x6") taken on or after Jan 1, 2026 (10–200 KB).
+Signature: On white paper with black/blue pen (4–30 KB).
+Thumb Impressions: Left and right-hand fingers and thumb impressions.
+Address Proof: Aadhaar, Voter ID, or Utility bill (PDF).
+Class 10 Certificate: (50–300 KB PDF).
+Important Note: Your choice of examination city is now strictly determined by the current and permanent addresses you provide in the form.
+1. The Competition (Student Statistics)
+The number of aspirants has been rising significantly every year.
+Estimated Applicants (2026): Over 2.5 to 2.6 million (25+ Lakhs) students are expected to register.
+Previous Year Trend: In 2025, approximately 2.4 million students appeared.
+Success Ratio: Only about 2% to 3% of total applicants secure a Government MBBS seat.
+
+2. MBBS Seat Matrix (Government vs. Private)
+India has seen a massive increase in medical colleges recently. As of early 2026, here is the approximate seat distribution:
+Category
+Number of Colleges
+Total MBBS Seats (Approx.)
+Government Colleges
+~390
+~56,500
+Private/Deemed Colleges
+~325
+~52,000
+Total (India)
+~715
+~1,08,500
+Note: These numbers are dynamic as the National Medical Commission (NMC) approves new colleges and additional seats right up until the counseling process begins.
+
+3. High-Demand Institutional Seats
+Apart from state government colleges, students compete fiercely for these premier national seats:
+AIIMS (All India Institutes of Medical Sciences): ~2,044 seats (across 20+ campuses).
+JIPMER (Puducherry & Karaikal): ~250 seats.
+AFMC (Armed Forces Medical College, Pune): ~150 seats.
+BHU & AMU: ~250 seats combined.
+
+4. Reservation & Quotas (The Breakdown)
+When you compete for these 56,500+ Government Seats, they are split as follows:
+All India Quota (15%): Approximately 8,500 seats are open to students from all over India based purely on NEET rank.
+State Quota (85%): Approximately 48,000 seats are reserved for students of their respective home states (domicile).
+Category-wise Reservation (Central Pool):
+OBC (NCL): 27%
+EWS: 10%
+SC: 15%
+ST: 7.5%
+PwD: 5% (Horizontal reservation)
+
+
+Blog 2 Malayalam 
+പ്രധാന തീയതികൾ (Important Dates)
+2026-ലെ നീറ്റ് രജിസ്ട്രേഷൻ ഇപ്പോൾ നടന്നുകൊണ്ടിരിക്കുകയാണ്. അവസാന നിമിഷത്തെ തിരക്ക് ഒഴിവാക്കാൻ നേരത്തെ തന്നെ അപേക്ഷിക്കുക.
+രജിസ്ട്രേഷൻ തുടങ്ങിയത്: 2026 ഫെബ്രുവരി 8
+അപേക്ഷിക്കാനുള്ള അവസാന തീയതി: 2026 മാർച്ച് 8 (രാത്രി 9 മണി വരെ)
+ഫീസ് അടയ്ക്കാനുള്ള അവസാന സമയം: 2026 മാർച്ച് 8 (രാത്രി 11:50 വരെ)
+തിരുത്തലുകൾ വരുത്താൻ (Correction Window): 2026 മാർച്ച് 10 - 12
+പരീക്ഷാ തീയതി: 2026 മെയ് 3 (ഞായറാഴ്ച)
+പരീക്ഷാ സമയം: ഉച്ചയ്ക്ക് 2:00 മുതൽ വൈകുന്നേരം 5:00 വരെ (3 മണിക്കൂർ)
+
+2. 2026-ലെ പ്രധാന മാറ്റങ്ങൾ
+ഈ വർഷം അപേക്ഷാ രീതിയിൽ ചില പുതിയ സാങ്കേതിക മാറ്റങ്ങൾ വന്നിട്ടുണ്ട്:
+ആധാർ eKYC: രജിസ്ട്രേഷൻ സമയത്ത് ആധാർ കാർഡ് ഉപയോഗിച്ചുള്ള വെരിഫിക്കേഷൻ നിർബന്ധമാണ്. ആധാറുമായി ലിങ്ക് ചെയ്ത മൊബൈൽ നമ്പർ കയ്യിലുണ്ടെന്ന് ഉറപ്പുവരുത്തുക.
+ലൈവ് ഫോട്ടോ (Live Photo): പഴയ രീതിയിൽ സ്റ്റുഡിയോ ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുന്നതിന് പകരം, അപേക്ഷ പൂരിപ്പിക്കുമ്പോൾ തന്നെ വെബ്ക്യാം വഴിയോ സ്മാർട്ട്ഫോൺ വഴിയോ ഉള്ള തത്സമയ ഫോട്ടോ എടുക്കണം.
+ചോദ്യങ്ങളിലെ മാറ്റം: മുൻ വർഷങ്ങളിൽ സെക്ഷൻ ബി-യിൽ ഉണ്ടായിരുന്ന ചോയ്സ് (15-ൽ 10 എണ്ണം മാത്രം എഴുതിയാൽ മതി എന്ന രീതി) ഈ വർഷം ഒഴിവാക്കി. 180 ചോദ്യങ്ങളും നിർബന്ധമായും എഴുതേണ്ടതുണ്ട്.
+സമയം: പരീക്ഷാ സമയം 3 മണിക്കൂർ ആയി നിജപ്പെടുത്തി.
+
+3. സീറ്റുകളും മത്സരവും (Seat Matrix & Competition)
+ഇന്ത്യയിലെ മെഡിക്കൽ സീറ്റുകൾക്കായി വലിയ മത്സരമാണ് നടക്കുന്നത്.
+വിവരം
+കണക്കുകൾ (ഏകദേശം)
+ആകെ അപേക്ഷകർ (2026)
+25 - 26 ലക്ഷം
+ഇന്ത്യയിലെ ആകെ MBBS സീറ്റുകൾ
+~1,15,000
+ഗവൺമെന്റ് MBBS സീറ്റുകൾ
+~59,000 - 60,000
+കേരളത്തിലെ ഗവൺമെന്റ് സീറ്റുകൾ
+~1,755
+ഓർക്കുക: ഗവൺമെന്റ് സീറ്റുകൾക്കാണ് ഏറ്റവും കൂടുതൽ മത്സരവും ഏറ്റവും കുറഞ്ഞ ഫീസും (വർഷം ₹25,000 - ₹35,000). പ്രൈവറ്റ് കോളേജുകളിൽ ഫീസ് വളരെ കൂടുതലായിരിക്കും.
+
+4. അപേക്ഷാ ഫീസ് (Application Fee)
+ജനറൽ (General): ₹1,700
+OBC-NCL / EWS: ₹1,600
+SC / ST / PwBD / Third Gender: ₹1,000
+
+5. അപേക്ഷിക്കാൻ ആവശ്യമായ രേഖകൾ
+ആധാർ കാർഡ്: നിങ്ങളുടെ വിവരങ്ങൾ ശരിയാണെന്ന് ഉറപ്പാക്കുക.
+ഫോട്ടോകൾ: പാസ്‌പോർട്ട് സൈസ് ഫോട്ടോയും പോസ്റ്റ്‌കാർഡ് സൈസ് (4"x6") ഫോട്ടോയും. (വെളുത്ത പശ്ചാത്തലം).
+ഒപ്പ് (Signature): വെളുത്ത പേപ്പറിൽ കറുത്ത മഷിയിൽ ഇട്ട ഒപ്പിന്റെ സ്കാൻ ചെയ്ത കോപ്പി.
+വിരലടയാളം: പത്ത് വിരലുകളുടെയും അടയാളങ്ങൾ സ്കാൻ ചെയ്ത് നൽകണം.
+സർട്ടിഫിക്കറ്റുകൾ: 10-ാം ക്ലാസ് പാസ് സർട്ടിഫിക്കറ്റ്, അഡ്രസ് പ്രൂഫ്.
+. വിദ്യാർത്ഥികളുടെ എണ്ണം (മത്സരം)
+പ്രതീക്ഷിക്കുന്ന അപേക്ഷകർ (2026): ഏകദേശം 25 മുതൽ 26 ലക്ഷം വരെ വിദ്യാർത്ഥികൾ ഈ വർഷം പരീക്ഷയ്ക്ക് രജിസ്റ്റർ ചെയ്യുമെന്ന് കരുതപ്പെടുന്നു.
+കേരളത്തിൽ മാത്രം: ഏകദേശം 1.2 ലക്ഷത്തിലധികം വിദ്യാർത്ഥികൾ കേരളത്തിൽ നിന്ന് പരീക്ഷ എഴുതാറുണ്ട്.
+2. എം.ബി.ബി.എസ് (MBBS) സീറ്റുകൾ - ഇന്ത്യയിലുടനീളം
+ഇന്ത്യയിലെ സർക്കാർ, സ്വകാര്യ മെഡിക്കൽ കോളേജുകളിലെ സീറ്റുകളുടെ ഏകദേശ കണക്ക് താഴെ പറയുന്ന രീതിയിലാണ്:
+വിഭാഗം
+കോളേജുകളുടെ എണ്ണം
+ആകെ സീറ്റുകൾ (ഏകദേശം)
+ഗവൺമെന്റ് കോളേജുകൾ
+~390+
+~56,500 - 63,000
+സ്വകാര്യ കോളേജുകൾ
+~325+
+~52,000 - 65,000
+ആകെ (ഇന്ത്യ)
+~715+
+~1,29,000+
+AIIMS (All India Institutes of Medical Sciences) പോലെയുള്ള മുൻനിര സ്ഥാപനങ്ങളിലായി ഏകദേശം 2,250-ലധികം സീറ്റുകൾ ഇതിൽ ഉൾപ്പെടുന്നു.
+
+3. കേരളത്തിലെ സീറ്റുകളുടെ എണ്ണം (Kerala Seat Matrix)
+കേരളത്തിലെ ഗവൺമെന്റ് മെഡിക്കൽ കോളേജുകൾ മികച്ച നിലവാരമുള്ളവയായതുകൊണ്ട് വലിയ മത്സരമാണ് ഇവിടെ നടക്കുന്നത്.
+ഗവൺമെന്റ് മെഡിക്കൽ കോളേജുകൾ: 12 എണ്ണം (കൂടാതെ പരിയാരം, എറണാകുളം തുടങ്ങിയവ ഉൾപ്പെടെ).
+ആകെ ഗവൺമെന്റ് MBBS സീറ്റുകൾ: ഏകദേശം 1,755.
+സ്വാശ്രയ (Private) മെഡിക്കൽ കോളേജുകൾ: 21 എണ്ണം (ഏകദേശം 3,000 സീറ്റുകൾ).
+
+4. സീറ്റുകളുടെ വിഭജനം (Quota System)
+ഗവൺമെന്റ് കോളേജുകളിലെ സീറ്റുകൾ പ്രധാനമായും രണ്ട് ക്വാട്ടകളിലായാണ് നൽകുന്നത്:
+All India Quota (AIQ - 15%): ഇന്ത്യയിലെ എല്ലാ ഗവൺമെന്റ് കോളേജുകളിലെയും 15% സീറ്റുകൾ ഈ ക്വാട്ട വഴി നികത്തുന്നു. ഇതിൽ ഏത് സംസ്ഥാനത്തെ വിദ്യാർത്ഥിക്കും അപേക്ഷിക്കാം (ഏകദേശം 8,500+ സീറ്റുകൾ).
+State Quota (85%): ബാക്കിയുള്ള 85% സീറ്റുകൾ അതത് സംസ്ഥാനത്തെ വിദ്യാർത്ഥികൾക്കായി സംവരണം ചെയ്തിരിക്കുന്നു (കേരളത്തിൽ ഏകദേശം 1,500 ഓളം സീറ്റുകൾ).
+5. എന്തുകൊണ്ട് ഗവൺമെന്റ് സീറ്റുകൾ?
+കുറഞ്ഞ ഫീസ്: ഗവൺമെന്റ് കോളേജുകളിൽ വർഷം ഏകദേശം ₹25,000 - ₹35,000 മാത്രമാണ് ഫീസ്. എന്നാൽ സ്വകാര്യ കോളേജുകളിൽ ഇത് ₹7 ലക്ഷം മുതൽ ₹20 ലക്ഷം വരെയാകാം.
+ക്ലിനിക്കൽ എക്സ്പോഷർ: ഗവൺമെന്റ് ആശുപത്രികളിൽ രോഗികളുടെ എണ്ണം കൂടുതലായതിനാൽ വിദ്യാർത്ഥികൾക്ക് കൂടുതൽ പ്രായോഗിക പഠനത്തിന് അവസരം ലഭിക്കുന്നു.
+
+
+
+
+
+--- END: Blogs .docx ---
+
+--- START: COURSES- details.docx ---
+
+COURSES 
+Pre-foundation
+Foundation
+Long term
+Crash 
+Repeaters
+Tuition 
+Bridge course 
+Pre-foundation
+Bodhi Pre-Foundation: Igniting the Spark
+Target Group: Students of Classes 5, 6, and 7.
+What is Pre-Foundation?
+At this age, children are naturally curious. Our Pre-Foundation program is designed to take that curiosity and turn it into a love for Science and Mathematics. Instead of rote memorization, we focus on discovery. We help students understand the "Magic of Math" and the "Secrets of Science" in a way that school textbooks often miss.
+Why start at Class 5, 6, or 7?
+This is the "Golden Age" for brain development. By introducing logical reasoning and creative problem-solving, scientific attitude, mathematical skills etc. now, we ensure that when they reach higher classes, they don't find subjects "tough"—they find them "interesting."
+The Bodhi Way for Young Learners:
+Nurturing Mentorship: Our mentors act as "Scientific Guides." They don't just give answers; they encourage students to ask better questions. This builds the confidence to think independently from a young age.
+Mindful Play: We introduce meditation through simple breathing exercises and "quiet time." This helps children improve their attention span, manage school-related anxiety, and stay calm during tests.
+The Joy of Sound : We use music to make learning rhythmic and fun. Whether it’s remembering a pattern or just relaxing after a math session, music ensures that the child’s association with learning is always happy.
+Growth Tracking (Result Analysis): At this level, our analysis isn't about "pass or fail." We look for "Lightbulb Moments." we track how a student’s logic is improving and identify their natural interests early on.
+The Significance:
+Fearless Learning: We remove the "fear of Math" before it even starts.
+Competitive Edge: Students develop the "Logical Reasoning" skills needed for Olympiads and talent search exams in a stress-free way.
+Holistic Growth: By balancing study with music and meditation, we ensure your child grows into a well-rounded, thoughtful individual.
+At Bodhi, we aren't just teaching students; we are awakening the little scientists and mathematicians within them.
+
+
+
+Foundation
+Bodhi Foundation: Building the Roots of Excellence
+Target Group: Students in Classes 8, 9, and 10.
+What is a Foundation Course?
+Most students wait until Class 11 to start preparing for competitive exams like NEET or JEE. A Foundation Course introduces these concepts earlier, but at a much more comfortable pace. It bridges the gap between school textbooks and the advanced logic required for national-level entrances.
+Why Start Early at Bodhi?
+At Bodhi, we believe that a strong building needs a deep foundation. We don't just teach Science and Math; we nurture the "Scholar Mindset" through our unique four-pillar approach:
+Mentorship for Young Minds: Transitioning into higher secondary can be daunting. Our mentors provide the psychological and academic "hand-holding" needed to build early confidence.
+The Power of Focus: We teach students how to sit still and focus. By starting meditation at this age, they develop a natural immunity to exam stress before they even reach Class 12.
+Creative Learning: Learning through experience from experienced faculty team. 
+Smart Analytics: Even at the foundation level, we analyze every result. This helps us identify a student's natural strengths—whether they are a born engineer or a future doctor—long before they have to choose a stream.
+The Significance:
+Logical Clarity: Students learn the "Why" behind the "What," making school exams feel much easier.
+Edge over Peers: By the time a Foundation student reaches Class 11, they are already familiar with 30-40% of the entrance syllabus.
+Stress-Free Success: Because the learning is spread over three years instead of two, the pressure is significantly lower, allowing for overall development.
+At Bodhi, we don't just prepare you for an exam; we prepare you for a future where you are always ahead.
+
+
+Longterm
+The Bodhi Long-Term Program: Excellence, Your Way
+Target Group: Students of Class 11 (+1) and Class 12 (+2).
+The transition to higher secondary is a marathon, not a sprint. Our long-term courses are designed to provide consistent, high-quality orientation for NEET, JEE, and KEAM while ensuring the student’s well-being remains a priority.
+We offer three flexible pathways to suit different student needs:
+1. Integrated School Program (The Seamless Path)
+This is our most comprehensive model where we partner with schools to provide entrance coaching within school hours.
+The Benefit: No extra travel or evening classes.
+2. Weekend Batches (The Focused Path)
+Designed for students who want to keep their weekdays dedicated to school and self-study.
+The Benefit: Intense, high-quality sessions on second Saturdays Sundays and holidays.
+3. Tuition + Entrance Batches (The Balanced Path)
+A hybrid model that covers both the Board Exam syllabus (Tuition) and competitive exam patterns (Entrance) in the evenings.
+The Benefit: Total academic security—doing well in school while aiming for a top rank.
+
+Why Choose the Bodhi Long-Term Approach?
+Consistency: By spreading the syllabus over two years, we eliminate the need for last-minute "cramming."
+Mental Resilience: Because we are with the student for two years, our mentors can build deep trust, helping them navigate the highs and lows of teen life and academic pressure.
+Early Calibration: Regular analysis over a long period allows us to fine-tune a student's exam strategy based on their evolving strengths.
+
+
+Crash 
+The Bodhi Intensive: Your Final Step to Success
+The few weeks following your Class 12 exams are the most critical. While you have learned the syllabus, competitive exams like NEET, JEE, and KEAM require a different skillset: speed, accuracy, and mental endurance.
+Our crash course is designed to transition you from "Board Exams" to "Entrance Ranker" through a balanced, four-point approach:
+Strategic Direction: You will work closely with mentors who simplify complex topics and help you focus only on what truly matters for the rank.
+Peak Mental Clarity: We use short meditation techniques to clear mental fog, ensuring you can sit for a three-hour exam with total focus and zero panic.
+Stress Recovery: By adopting systematic and scientific approach, we help you to recover from intense study sessions, preventing burnout and keeping your energy high.
+Progress Tracking: We don't just give marks; we analyze your results to show you exactly where you are losing time and how to fix it before the actual exam day.
+The Goal: To ensure you walk into the exam hall not just with a full head of knowledge, but with a calm heart and a clear plan.
+
+Why this Crash Course is significant:
+Bridging the Gap: Board exams reward long answers; entrance exams reward quick thinking. We shift your mindset.
+Time Management: We teach you which questions to attempt and which to skip—a skill that defines your final rank.
+Holistic Strength: Most students fail due to stress, not lack of knowledge. Our focus on your well-being ensures you stay ahead.
+
+
+Repeaters
+The Bodhi Repeater Program: Refine. Rebuild. Reclaim.
+Target Group: Students who have completed Class 12 and are dedicating a year to exclusively focus on NEET, JEE, or KEAM.
+A "gap year" is not a pause; it is an investment. At Bodhi, we understand that a repeater student doesn't need to start from scratch—they need to start smarter. Our program is designed to transform "lost marks" into "earned ranks" through a high-focus, distraction-free environment.
+Why the Bodhi Repeater Program is Different:
+Analytical Diagnostics: Instead of re-learning everything, we begin with a deep result analysis of your previous attempt. We identify the exact "pressure points" where you struggled, allowing us to customize your learning path.
+Resilience & Mindset: The biggest hurdle for a repeater is often mental fatigue or self-doubt. We incorporate daily mindfulness to help you release the weight of the past and approach every mock test with a fresh, "Zen-like" focus.
+Sustainable Intensity : A year of pure entrance prep can be gruelling. We use scientific educational methodology and rhythmic breaks to ensure your brain stays elastic and creative, preventing the "mid-year burnout" that many droppers face.
+Expert Mentorship: You are paired with mentors who specialize in the psychology of repeating. They provide the emotional support and strategic nudges needed to keep your motivation high from June until the exam day.
+The Significance of This Course:
+Uninterrupted Focus: With no school exams or practicals, 100% of your energy is channeled toward one goal.
+Maturity in Learning: Repeaters often understand concepts at a deeper level than freshers. We leverage this maturity to focus on advanced problem-solving and time-management shortcuts.
+Turning Experience into an Edge: You have already seen the "battlefield." We help you use that experience to stay calm while others panic, ensuring your second attempt is your final, successful one.
+
+
+Tuition
+Bodhi Academic Tuition: Mastering the Foundation
+Focus: Conceptual Clarity & Board Exam Excellence (Class 11 & 12)
+At Bodhi, we believe that the pressure of "what comes next" should never overshadow the importance of "what is now." Our Academic Tuition program is dedicated exclusively to the Class 11 and 12 school curriculum. We move away from the rush of entrance coaching to focus on one single goal: Total Subject Mastery.
+We understand that for a student to secure top marks in Board Exams, they don't need shortcuts; they need a deep, unshakable clarity of concepts.
+How We Redefine Tuition:
+Concept-First Mentorship: Our educators act as mentors who bridge the gap between "reading a book" and "understanding the science." We take the time to answer every why and how, ensuring that the student is not just memorizing formulas, but mastering the logic behind them.
+The Calm Classroom: Science subjects in Class 11 and 12 can be overwhelming. We integrate short mindfulness sessions to help students clear the "mental clutter" of a long school day. This ensures they arrive at their tuition sessions with a fresh, receptive mind, ready to absorb complex theories.
+Cognitive Harmony : To make learning a pleasant experience rather than a chore, we use scientific educational methodology as a tool for transition and relaxation. This creates a rhythmic learning environment where students stay engaged and curious, preventing the "evening fatigue" that usually follows a full day of school.
+Diagnostic Progress (Result Analysis): Our assessment system is designed to mirror the Board Exam pattern. Through detailed result analysis, we identify exactly which topics a student finds difficult and provide personalized attention to turn those weaknesses into strengths.
+Why Focus on Tuition at Bodhi?
+Academic Confidence: By mastering the core concepts, students find their school exams and practicals much easier to navigate.
+Solid Foundation: High marks in Class 12 open doors to the best universities. We ensure your marksheet reflects your true potential.
+Stress-Free Learning: By removing the "entrance pressure" from these batches, we create a space where students can enjoy Science for what it is—a fascinating exploration of the world.
+At Bodhi, we provide the clarity today that builds the success of tomorrow.
+
+
+
+Bridge course
+The Bodhi Bridge: Transition with Confidence
+Target Group: Students who have completed Class 10 and are moving into Class 11 (Science). Timing: Conducted during the Summer Holidays.
+Why is a Bridge Course Essential?
+The jump from 10th-grade Science to 11th-grade Physics, Chemistry, and Biology is not just a step—it is an expansion. Concepts that were single chapters in Class 10 become entire textbooks in Class 11. Our program ensures that students don't start their academic year feeling lost, but rather, they enter the classroom with a "head start."
+The Bodhi Methodology:
+Fundamental Mentorship: Our mentors focus on "Unlearning and Relearning." We take the basic concepts from Class 10 and expand them into the advanced logic required for Class 11, ensuring the foundation is rock-solid.
+Developing Focus: The increase in study hours for +1 can be taxing. We introduce students to meditation techniques during the summer to help them build the mental stamina and focus required for the higher secondary level.
+Creative Engagement: We use the summer break effectively by incorporating music into the learning environment. This ensures that the transition to "serious science" feels light, engaging, and enjoyable, rather than a burden.
+Readiness Analysis: At the end of the course, we provide a result analysis that doesn't just grade the student, but identifies their natural aptitude. This helps students and parents decide which subjects they should focus on most during the academic year.
+Significance of the Course:
+Confidence Building: Students start their regular school year already familiar with the first few units of their syllabus.
+Smoothing the Curve: We introduce complex topics like Calculus in Physics or Organic Chemistry basics gradually, so they don't feel "sudden."
+Productive Summers: Instead of a total break, students spend a few hours a day keeping their minds sharp, making the eventual return to school effortless.
+At Bodhi, we ensure that your transition is not just a change of classes, but an awakening of a more advanced scientific mind.
+
+
+
+
+
+
+
+
+--- END: COURSES- details.docx ---
+
+--- START: Instead of schools - programmes.docx ---
+
+Instead of schools/ tuitions – 
+Programmes (drop box)
+Online Learning programme
+Offline Science centers 
+Integrated schools
+
+Bodhi Online: Your Digital Sanctuary for Learning
+At Bodhi, we believe that geography should never be a barrier to quality education. Through the Bodhi App, we have translated our core philosophy of "Enlightened Learning" into a powerful digital ecosystem. Whether you are seeking school support, competitive edge, or international excellence, our online platform brings the expertise of Bodhi to your fingertips.
+Our Specialized Online Streams:
+Entrance Coaching: Dedicated digital modules for NEET, JEE, and KEAM.
+Academic Tuitions: Comprehensive syllabus coverage for Class 11 & 12 Boards.
+International Tuitions: Specialized support for students following international curricula.
+One-to-One Support: Personalized, private sessions for students who require an individual pace and focused attention.
+The Digital "Bodhi" Edge:
+We have integrated our four-pillar philosophy into every feature of our app to ensure that online learning remains human, interactive, and balanced.
+24/7 Doubt Clearance & Mentoring: Learning doesn't stop after the live class. Our students have round-the-clock access to expert mentors, ensuring that no query goes unanswered and no student feels isolated.
+Concept-Wise Video Lectures: We break down complex Science and Math into digestible, high-quality video modules. This allows for "Self-Paced Mastery," where students can revisit difficult concepts until they are fully understood.
+Comprehensive Study Vault: Gain access to a massive library of meticulously prepared Notes, Previous Year Question (PYQ) Discussions, and curated study materials.
+Mock Exams & Real-Time Analytics: Our app performs deep Result Analysis on every test you take, instantly showing you your strengths and the areas that need more focus.
+Live Interactive Classes: Experience the energy of a real classroom from the comfort of your home. Our live sessions are designed for two-way communication, keeping students engaged and alert.
+Balancing the Digital Mind:
+Even in our online space, we prioritize Overall Development..At Bodhi Online, we don't just provide content; we provide a continuous, mentored journey toward your goals.
+
+Why the Bodhi App is Your Ultimate Learning Partner
+While many apps provide content, the Bodhi App provides a complete ecosystem designed for the specific pressures of a Science student. Here is why our digital platform is the preferred choice for toppers:
+The "Human" in Digital: Unlike automated platforms, our 24/7 Doubt Clearance is handled by subject experts, not just bots. You get real explanations to your specific questions, anytime curiosity strikes.
+Adaptive Learning Paths: Our app uses Result Analysis to understand your learning speed. If you struggle with Rotational Dynamics, the app suggests specific "Concept-Wise Video Lectures" to strengthen that foundation before moving forward.
+Exam-Simulated Environment: Our Mock Exams aren't just tests; they mirror the actual interface of exams like JEE (Computer Based Tests) and NEET. This builds the "Muscle Memory" needed to navigate the real exam day without technical anxiety.
+Archived Excellence (PYQ Discussions): We don't just provide the answers to Previous Year Questions; we provide Video Discussions on how to solve them. We teach you the shortcuts, the traps to avoid, and the logic that saves time.
+Parent-Teacher Transparency: The app features a dedicated dashboard for parents to track progress, attendance, and growth analytics, ensuring the entire support system.
+
+
+Offline Science Centers
+Bodhi Offline Science Centers: Where Focus Finds a Home
+While digital tools are powerful, we believe the most profound learning happens in a physical space designed for excellence. Our Offline Science Centers serve as the heart of the Bodhi experience—a sanctuary where students from all age groups come together to pursue academic mastery and personal growth.
+From our youngest learners to our most dedicated repeaters, the offline centers provide a disciplined, distraction-free environment that a home setting often cannot match.
+A Unified Ecosystem of Excellence
+Our physical centers house all our specialized streams under one roof, ensuring a continuous journey of growth:
+The Early Years (Pre-Foundation & Foundation): For students in Classes 5 through 10, our centers are spaces of discovery. Here, we build the "Scientific Temperament" through hands-on logic and conceptual clarity, preparing them for the challenges of higher secondary education.
+The Academic Core (Plus One & Plus Two Tuition): We provide a dedicated space for Class 11 and 12 students to master their school curriculum. These batches focus purely on Concept Clarity and Board Exam Excellence, ensuring that every student secures the high marks required for top-tier university admissions.
+The Competitive Edge (Entrance Orientation): Our centers are hubs for intensive NEET, JEE, and KEAM preparation. Students benefit from the "peer-group effect"—studying alongside ambitious peers, which naturally boosts motivation and performance.
+The Bodhi Offline Advantage:
+Physical Mentorship: There is no substitute for the eye contact and immediate feedback of a physical mentor. Our educators are present to guide, correct, and encourage students in real-time.
+In-Person Result Analysis: Test discussions happen face-to-face. Mentors sit with students to analyze their OMR sheets or mock test data, providing immediate strategies for improvement.
+A Space Designed for the "Whole Student"
+At a Bodhi Offline Center, we don’t just manage your subjects; we manage your environment. We provide a structured routine that balances rigorous study with the mental well-being necessary for long-term success.
+Whether you are bridging the gap from Class 10 or refining your skills as a repeater, our offline centers provide the discipline, the resources, and the peace of mind to achieve your dreams.
+
+Integrated School Program 
+For many students, the greatest challenge in Class 11 and 12 isn't the difficulty of the subjects, but the exhaustion of the commute. Traveling between school and a separate coaching center often leaves students with no time for self-study or rest.
+Bodhi’s Integrated School Program is designed to solve this by bringing our expert entrance orientation directly into the school campus.
+
+The Integrated Program: A Unified Academic Journey
+The Integrated model is a strategic partnership between Bodhi and prestigious schools. In this format, the school curriculum and the entrance preparation (NEET/JEE/KEAM) are merged into a single, streamlined timetable.
+Why the Integrated Path is the Most Efficient:
+Single Timetable, Zero Conflict: We align our teaching with the school’s schedule. When the school teaches a chapter in Physics, Bodhi’s mentors simultaneously cover the entrance-level applications of that same chapter. This eliminates the confusion of learning two different topics in one day.
+The Gift of Time: By completing entrance coaching during school hours, students save 3–4 hours of travel and evening classes daily. This time is reclaimed for self-study, hobbies, or the overall development that Bodhi stands for.
+Unified Mentorship: Our mentors work on-site, acting as a constant support system. They bridge the gap between "Board Exam Theory" and "Entrance Application," ensuring the student feels confident in both formats.
+Integrated Wellness: Because we control the schedule within the school, we can effectively weave in our core pillars
+On-Campus Analysis: Students take their mock exams in their familiar school environment, and result analysis is provided immediately, allowing for a collaborative discussion between the student, the mentor, and the school faculty.
+
+
+
+
+--- END: Instead of schools - programmes.docx ---
+
+--- START: NEWS.docx ---
+
+NEWS
+
+Medical (NEET UG 2026)
+Registration Status: LIVE (Started Feb 8, 2026).
+Last Date to Register: March 8, 2026 (9:00 PM).
+Correction Window: March 10 – March 12, 2026.
+Exam Date: May 3, 2026 (Sunday).
+News: New "Live Photo" capture and mandatory Aadhaar e-KYC are required during the application process.
+Engineering (JEE Main & Others)
+JEE Main 2026 (Session 2):
+Registration Status: LIVE (Started Feb 1, 2026).
+Last Date to Register: February 25, 2026.
+Exam Date: April 1 to April 10, 2026.
+KEAM 2026 (Kerala):
+Registration Status: CLOSED (Registration ended Feb 6, 2026).
+Exam Date: April 17 to April 23, 2026.
+VITEEE 2026:
+Last Date to Apply: March 31, 2026.
+Exam Date: April 19 – April 30, 2026.
+BITSAT 2026 (BITS Pilani)
+Event
+Session 1
+Session 2
+Registration Status
+LIVE (Started Dec 15, 2025)
+Opens April 20, 2026
+Last Date to Apply
+March 16, 2026 (5 PM)
+May 2, 2026
+Correction Window
+March 18 – 20, 2026
+May 4 – 6, 2026
+Exam Date
+April 15 – 17, 2026
+May 24 – 26, 2026
+BITSAT is the gateway to BITS campuses in Pilani, Goa, and Hyderabad. It is famous for its unique format, including English Proficiency and Logical Reasoning.
+
+CUSAT CAT 2026 (Cochin University)
+CUSAT CAT is a premier university exam in Kerala for B.Tech, Integrated M.Sc, and other professional courses.
+Event
+Important Dates
+Registration Status
+LIVE (Started Jan 27, 2026)
+Last Date to Apply (UG/PG)
+March 5, 2026
+M.Tech/MBA Last Date
+April 16 (M.Tech) / April 30 (MBA)
+Exam Dates
+May 9, 10, and 11, 2026
+Central Universities (CUET UG 2026)
+Registration Status: CLOSED (The primary window closed Jan 30/Feb 4, 2026).
+Correction Window: Ended on Feb 11, 2026.
+Exam Window: May 11 – May 31, 2026.
+News: If you missed this, watch for "Spot Admission" notifications from specific universities in July/August.
+
+Defence & Design (NDA & NIFT)
+NDA 1 2026:
+Registration Status: Closed (Dec 30, 2025).
+Exam Date: April 12, 2026.
+NDA 2 2026: Notification expected on May 20, 2026.
+NIFT 2026:
+Exam Status: COMPLETED (Exam was held on Feb 8, 2026). Results are expected in March 2026.
+ ISI Admission Test 2026
+The Indian Statistical Institute is world-renowned for Statistics and Mathematics. If you are aiming for B.Stat (Hons) or B.Math (Hons), note these dates:
+Registration Status: LIVE (Started Feb 12, 2026).
+Last Date to Register: March 13, 2026.
+ISI Admission Test Date: May 10, 2026 (Sunday).
+BSDS (Data Science) Registration: April 28 – May 28, 2026.
+Exam Mode: Offline (Pen and Paper).
+Official Website: admission.isical.ac.in
+Key Note: Mathematics is the "make or break" section here. The exam consists of multiple-choice (UGA) and descriptive (UGB) sections.
+
+2. IISER Aptitude Test (IAT) 2026
+The IAT is the gateway to the 5-year BS-MS dual degree at all seven IISER campuses, as well as the research programs at IISc Bangalore and IIT Madras.
+Registration Status: Not started yet (Starts March 5, 2026).
+Last Date to Register: April 13, 2026.
+Correction Window: April 13 – April 15, 2026.
+IAT Exam Date: June 7, 2026 (Sunday).
+Exam Timing: 9:00 AM to 12:00 PM.
+Exam Mode: Online (Computer-Based Test).
+Official Website: iiseradmission.in
+ 
+--- END: NEWS.docx ---
+
+--- START: ~$out Us.docx ---
+Error: File is not a zip file
+--- END: ~$out Us.docx ---
+

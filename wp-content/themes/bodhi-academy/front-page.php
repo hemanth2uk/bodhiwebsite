@@ -4,7 +4,7 @@
  */
 get_header(); ?>
 
-<main id="primary" class="site-main">
+
 
     <!-- Hero Section with Animations -->
     <!-- Modern Hero (Glassmorphism) -->
@@ -64,23 +64,6 @@ get_header(); ?>
         </div>
     </section>
     
-    <!-- News Ticker Section -->
-    <div class="news-ticker-wrapper" style="background: var(--primary-dark); padding: 15px 0; border-bottom: 2px solid var(--accent); overflow: hidden;">
-        <div class="container" style="display: flex; align-items: center; gap: 30px;">
-            <div class="news-label" style="background: var(--accent); color: #000; padding: 5px 20px; border-radius: 5px; font-weight: 800; font-size: 0.8rem; text-transform: uppercase; white-space: nowrap; box-shadow: 0 4px 10px rgba(255,193,7,0.3);">
-                <i class="fas fa-bullhorn" style="margin-right: 8px;"></i> <?php echo get_field('home_news_title') ?: 'Latest News'; ?>
-            </div>
-            <div class="ticker-content" style="flex: 1; overflow: hidden; position: relative; height: 30px;">
-                <div class="ticker-inner animate-scroll" style="display: flex; gap: 100px; white-space: nowrap; align-items: center; color: white; font-weight: 500; font-size: 0.95rem;">
-                    <span><?php echo get_field('home_news_1') ?: 'NEET UG 2026: Registration LIVE - Ends March 8, 2026'; ?></span>
-                    <span><?php echo get_field('home_news_2') ?: 'JEE Main 2026 (Session 2): Registration LIVE - Ends Feb 25'; ?></span>
-                    <span><?php echo get_field('home_news_3') ?: 'ISI Admission Test 2026: Registration LIVE - Exam May 10'; ?></span>
-                    <!-- Loop back for seamless scrolling -->
-                    <span><?php echo get_field('home_news_1') ?: 'NEET UG 2026: Registration LIVE - Ends March 8, 2026'; ?></span>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Popular Courses -->
     <section class="section-padding">

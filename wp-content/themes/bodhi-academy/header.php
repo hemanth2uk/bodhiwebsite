@@ -33,6 +33,24 @@
 
 	<header id="masthead" class="site-header academia-style">
 		
+        <!-- Global News Ticker -->
+        <div class="news-ticker-wrapper" style="background: var(--primary-dark); padding: 12px 0; border-bottom: 2px solid var(--accent); overflow: hidden; position: relative; z-index: 1001;">
+            <div class="container" style="display: flex; align-items: center; gap: 30px;">
+                <div class="news-label" style="background: var(--accent); color: #000; padding: 4px 15px; border-radius: 4px; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; white-space: nowrap; box-shadow: 0 4px 10px rgba(255,193,7,0.2);">
+                    <i class="fas fa-bullhorn" style="margin-right: 6px;"></i> <?php echo get_field('home_news_title', get_option('page_on_front')) ?: 'Latest Updates'; ?>
+                </div>
+                <div class="ticker-content" style="flex: 1; overflow: hidden; position: relative; height: 24px;">
+                    <div class="ticker-inner animate-scroll" style="display: flex; gap: 80px; white-space: nowrap; align-items: center; color: white; font-weight: 500; font-size: 0.9rem;">
+                        <span><?php echo get_field('home_news_1', get_option('page_on_front')) ?: 'Welcome to Bodhi Academy - Excellence in Education'; ?></span>
+                        <span><?php echo get_field('home_news_2', get_option('page_on_front')) ?: 'NEET & JEE 2026 Batch Admissions Open'; ?></span>
+                        <span><?php echo get_field('home_news_3', get_option('page_on_front')) ?: 'Contact us for a free session & career counseling'; ?></span>
+                        <!-- Loop for smooth scrolling -->
+                        <span aria-hidden="true"><?php echo get_field('home_news_1', get_option('page_on_front')) ?: 'Welcome to Bodhi Academy - Excellence in Education'; ?></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
         <!-- Top Bar: Logo & Info -->
         <div class="header-top">
             <div class="container top-inner">

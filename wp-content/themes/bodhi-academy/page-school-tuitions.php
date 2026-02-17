@@ -27,10 +27,8 @@ $track3_img   = get_field('tuition_track_3_image');
 <div class="tuitions-page">
 
     <!-- Hero Section -->
-    <section class="hero-section" style="background: url('<?php echo esc_url($hero_img); ?>') no-repeat center center/cover; position: relative; height: 60vh; display: flex; align-items: center;">
-        <div class="overlay" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,77,64,0.9), rgba(0,77,64,0.4));"></div>
-        
-        <div class="container" style="position: relative; z-index: 2;">
+    <section class="about-hero" style="background: linear-gradient(rgba(0,55,50,0.8), rgba(0,55,50,0.9)), url('<?php echo esc_url($hero_img); ?>'); background-size: cover; background-position: center; color: white; padding: 120px 0 80px; text-align: center;">
+        <div class="container animate-fade-in" style="position: relative; z-index: 2;">
             <div class="hero-content animate-fade-up" style="max-width: 700px;">
                 <span class="badge" style="background: var(--accent); color: #000; padding: 5px 15px; border-radius: 20px; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase;"><?php echo get_field('tuition_hero_badge') ?: 'Build Your Future'; ?></span>
                 <h1 style="font-size: 3.5rem; font-weight: 800; color: white; margin: 20px 0; line-height: 1.1;"><?php echo esc_html($hero_title); ?></h1>

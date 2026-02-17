@@ -1,0 +1,17 @@
+Registered Menus:
+- Name: Primary Menu (ID: 3)
+  - Item: [Home] (ID: 16, Parent: 0, URL: http://localhost/bodhiwebsite/)
+  - Item: [About Us] (ID: 17, Parent: 0, URL: http://localhost/bodhiwebsite/about-us/)
+  - Item: [Courses] (ID: 18, Parent: 0, URL: http://localhost/bodhiwebsite/courses/)
+  - Item: [Scholarship] (ID: 20, Parent: 0, URL: http://localhost/bodhiwebsite/scholarship/)
+  - Item: [Blogs] (ID: 21, Parent: 0, URL: http://localhost/bodhiwebsite/blogs/)
+  - Item: [News] (ID: 22, Parent: 0, URL: http://localhost/bodhiwebsite/news/)
+  - Item: [Careers] (ID: 23, Parent: 0, URL: http://localhost/bodhiwebsite/careers/)
+  - Item: [Contact Us] (ID: 24, Parent: 0, URL: http://localhost/bodhiwebsite/contact-us/)
+  - Item: [PROGRAMMES] (ID: 19, Parent: 0, URL: #)
+  - Item: [Bodhi Online] (ID: 68, Parent: 19, URL: http://localhost/bodhiwebsite/bodhi-online/)
+  - Item: [Offline Centers] (ID: 69, Parent: 19, URL: http://localhost/bodhiwebsite/offline-centers/)
+  - Item: [Integrated Schools] (ID: 70, Parent: 19, URL: http://localhost/bodhiwebsite/integrated-schools/)
+
+Theme Locations:
+- Location: primary (Primary Menu)

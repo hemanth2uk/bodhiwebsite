@@ -966,9 +966,27 @@ if( function_exists('acf_add_local_field_group') ):
              array('key' => 'field_c_t2_desc', 'label' => 'Tuition 2 Desc', 'name' => 'c_t2_desc', 'type' => 'textarea', 'default_value' => 'Board exam preparation.'),
              array('key' => 'field_c_t2_img', 'label' => 'Tuition 2 Image', 'name' => 'c_t2_image', 'type' => 'image', 'return_format' => 'url'),
 
-             array('key' => 'field_c_t3_title', 'label' => 'Tuition 3 Title', 'name' => 'c_t3_title', 'type' => 'text', 'default_value' => 'Class 11 & 12 (Commerce)'),
-             array('key' => 'field_c_t3_desc', 'label' => 'Tuition 3 Desc', 'name' => 'c_t3_desc', 'type' => 'textarea', 'default_value' => 'Accountancy, Economics...'),
-             array('key' => 'field_c_t3_img', 'label' => 'Tuition 3 Image', 'name' => 'c_t3_image', 'type' => 'image', 'return_format' => 'url'),
+            array(
+                'key' => 'field_c_t3_title',
+                'label' => 'Tuition 3 Title',
+                'name' => 'c_t3_title',
+                'type' => 'text',
+                'default_value' => 'Class 11 & 12 (Commerce)',
+            ),
+            array(
+                'key' => 'field_c_t3_desc',
+                'label' => 'Tuition 3 Desc',
+                'name' => 'c_t3_desc',
+                'type' => 'textarea',
+                'default_value' => 'Accountancy, Economics...',
+            ),
+            array(
+                'key' => 'field_c_t3_img',
+                'label' => 'Tuition 3 Image',
+                'name' => 'c_t3_image',
+                'type' => 'image',
+                'return_format' => 'url',
+            ),
 
         ),
         'location' => array(
@@ -977,6 +995,48 @@ if( function_exists('acf_add_local_field_group') ):
                     'param' => 'page_template',
                     'operator' => '==',
                     'value' => 'page-courses.php',
+                ),
+            ),
+        ),
+    ));
+
+    // CONTACT PAGE FIELDS
+    acf_add_local_field_group(array(
+        'key' => 'group_contact_page',
+        'title' => 'Contact Page',
+        'fields' => array(
+            array('key' => 'field_con_hero_title', 'label' => 'Hero Title', 'name' => 'contact_hero_title', 'type' => 'text', 'default_value' => 'Contact Bodhi Academy'),
+            array('key' => 'field_con_hero_desc', 'label' => 'Hero Description', 'name' => 'contact_hero_desc', 'type' => 'text', 'default_value' => 'Have questions about admissions or courses? We are here to help you achieve your academic goals.'),
+            
+            // Address
+            array('key' => 'field_con_address', 'label' => 'Physical Address', 'name' => 'contact_address', 'type' => 'textarea', 'default_value' => "Bodhi Academy, 2nd Floor,\nNear Kaloor Metro Station,\nKochi, Kerala, 682017"),
+            
+            // Phones
+            array('key' => 'field_con_phone_1', 'label' => 'Phone 1', 'name' => 'contact_phone_1', 'type' => 'text', 'default_value' => '+91 98765 43210'),
+            array('key' => 'field_con_phone_2', 'label' => 'Phone 2', 'name' => 'contact_phone_2', 'type' => 'text', 'default_value' => '0484 - 2345678'),
+            
+            // Emails
+            array('key' => 'field_con_email_1', 'label' => 'Email 1', 'name' => 'contact_email_1', 'type' => 'text', 'default_value' => 'admissions@bodhiacademy.com'),
+            array('key' => 'field_con_email_2', 'label' => 'Email 2', 'name' => 'contact_email_2', 'type' => 'text', 'default_value' => 'info@bodhiacademy.com'),
+            
+            // Socials (Override global if needed)
+            array('key' => 'field_con_fb', 'label' => 'Facebook URL', 'name' => 'contact_fb', 'type' => 'url'),
+            array('key' => 'field_con_ig', 'label' => 'Instagram URL', 'name' => 'contact_ig', 'type' => 'url'),
+            array('key' => 'field_con_tw', 'label' => 'Twitter URL', 'name' => 'contact_tw', 'type' => 'url'),
+            array('key' => 'field_con_li', 'label' => 'LinkedIn URL', 'name' => 'contact_li', 'type' => 'url'),
+
+            // Map
+            array('key' => 'field_con_map_url', 'label' => 'Google Maps Link', 'name' => 'contact_map_url', 'type' => 'url', 'default_value' => 'https://goo.gl/maps/example'),
+
+            // Shortcode
+            array('key' => 'field_con_shortcode', 'label' => 'Contact Form Shortcode', 'name' => 'contact_form_shortcode', 'type' => 'text', 'default_value' => '[contact-form-7 title="Contact Bodhi Academy (Premium)"]'),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page_template',
+                    'operator' => '==',
+                    'value' => 'page-contact.php',
                 ),
             ),
         ),
@@ -1039,3 +1099,352 @@ function bodhi_block_user_enumeration() {
     }
 }
 add_action( 'template_redirect', 'bodhi_block_user_enumeration' );
+
+    // ONLINE PROGRAMME FIELDS
+    acf_add_local_field_group(array(
+        'key' => 'group_online_program',
+        'title' => 'Programmes: Bodhi Online',
+        'fields' => array(
+            array('key' => 'field_online_hero_title', 'label' => 'Hero Title', 'name' => 'online_hero_title', 'type' => 'text', 'default_value' => 'Bodhi Online: Your Digital Sanctuary for Learning'),
+            array('key' => 'field_online_hero_desc', 'label' => 'Hero Description', 'name' => 'online_hero_desc', 'type' => 'textarea', 'default_value' => 'Through the Bodhi App, we have translated our core philosophy of "Enlightened Learning" into a powerful digital ecosystem.'),
+            array('key' => 'field_online_hero_img', 'label' => 'Hero Image', 'name' => 'online_hero_image', 'type' => 'image', 'return_format' => 'url'),
+            
+            // Streams
+            array('key' => 'field_online_streams_title', 'label' => 'Streams Title', 'name' => 'online_streams_title', 'type' => 'text', 'default_value' => 'Our Specialized Online Streams'),
+            array('key' => 'field_online_stream_1', 'label' => 'Stream 1 (Entrance)', 'name' => 'online_stream_1', 'type' => 'textarea', 'default_value' => 'Entrance Coaching: Dedicated digital modules for NEET, JEE, and KEAM.'),
+            array('key' => 'field_online_stream_2', 'label' => 'Stream 2 (Academic)', 'name' => 'online_stream_2', 'type' => 'textarea', 'default_value' => 'Academic Tuitions: Comprehensive syllabus coverage for Class 11 & 12 Boards.'),
+            array('key' => 'field_online_stream_3', 'label' => 'Stream 3 (International)', 'name' => 'online_stream_3', 'type' => 'textarea', 'default_value' => 'International Tuitions: Specialized support for students following international curricula.'),
+            array('key' => 'field_online_stream_4', 'label' => 'Stream 4 (Support)', 'name' => 'online_stream_4', 'type' => 'textarea', 'default_value' => 'One-to-One Support: Personalized, private sessions for students who require an individual pace.'),
+            
+            // Features
+            array('key' => 'field_online_edge_title', 'label' => 'Edge Section Title', 'name' => 'online_edge_title', 'type' => 'text', 'default_value' => 'The Digital "Bodhi" Edge'),
+            array('key' => 'field_online_feature_1', 'label' => 'Feature 1 (Doubt)', 'name' => 'online_feature_1', 'type' => 'textarea', 'default_value' => '24/7 Doubt Clearance & Mentoring: Learning doesn\'t stop after the live class.'),
+            array('key' => 'field_online_feature_2', 'label' => 'Feature 2 (Videos)', 'name' => 'online_feature_2', 'type' => 'textarea', 'default_value' => 'Concept-Wise Video Lectures: Self-Paced Mastery of complex Science and Math.'),
+            array('key' => 'field_online_feature_3', 'label' => 'Feature 3 (Vault)', 'name' => 'online_feature_3', 'type' => 'textarea', 'default_value' => 'Comprehensive Study Vault: Notes, PYQ Discussions, and curated materials.'),
+            array('key' => 'field_online_feature_4', 'label' => 'Feature 4 (Test)', 'name' => 'online_feature_4', 'type' => 'textarea', 'default_value' => 'Mock Exams & Real-Time Analytics: Deep analysis of strengths and focus areas.'),
+        ),
+        'location' => array(array(array('param' => 'page_template', 'operator' => '==', 'value' => 'page-online-program.php'))),
+    ));
+
+    // OFFLINE CENTERS FIELDS
+    acf_add_local_field_group(array(
+        'key' => 'group_offline_centers',
+        'title' => 'Programmes: Offline Centers',
+        'fields' => array(
+            array('key' => 'field_offline_hero_title', 'label' => 'Hero Title', 'name' => 'offline_hero_title', 'type' => 'text', 'default_value' => 'Bodhi Offline Science Centers'),
+            array('key' => 'field_offline_hero_desc', 'label' => 'Hero Description', 'name' => 'offline_hero_desc', 'type' => 'textarea', 'default_value' => 'Where Focus Finds a Home. A physical space designed for academic mastery and personal growth.'),
+            array('key' => 'field_offline_hero_img', 'label' => 'Hero Image', 'name' => 'offline_hero_image', 'type' => 'image', 'return_format' => 'url'),
+            
+            // Ecosystem
+            array('key' => 'field_offline_eco_title', 'label' => 'Ecosystem Title', 'name' => 'offline_eco_title', 'type' => 'text', 'default_value' => 'A Unified Ecosystem of Excellence'),
+            array('key' => 'field_offline_eco_1', 'label' => 'The Early Years', 'name' => 'offline_eco_1', 'type' => 'textarea', 'default_value' => 'Classes 5-10: Building "Scientific Temperament" through hands-on logic.'),
+            array('key' => 'field_offline_eco_2', 'label' => 'The Academic Core', 'name' => 'offline_eco_2', 'type' => 'textarea', 'default_value' => 'Plus One & Plus Two: Concept Clarity and Board Exam Excellence.'),
+            array('key' => 'field_offline_eco_3', 'label' => 'The Competitive Edge', 'name' => 'offline_eco_3', 'type' => 'textarea', 'default_value' => 'NEET, JEE, KEAM: Intensive preparation with the "peer-group effect".'),
+            
+            // Advantage
+            array('key' => 'field_offline_adv_title', 'label' => 'Advantage Title', 'name' => 'offline_adv_title', 'type' => 'text', 'default_value' => 'The Bodhi Offline Advantage'),
+            array('key' => 'field_offline_adv_1', 'label' => 'Physical Mentorship', 'name' => 'offline_adv_1', 'type' => 'textarea', 'default_value' => 'Immediate feedback and real-time guidance from present educators.'),
+            array('key' => 'field_offline_adv_2', 'label' => 'In-Person Analysis', 'name' => 'offline_adv_2', 'type' => 'textarea', 'default_value' => 'Face-to-face test discussions and strategy sessions.'),
+            array('key' => 'field_offline_adv_3', 'label' => 'Structured Routine', 'name' => 'offline_adv_3', 'type' => 'textarea', 'default_value' => 'A space designed to balance rigorous study with mental well-being.'),
+        ),
+        'location' => array(array(array('param' => 'page_template', 'operator' => '==', 'value' => 'page-offline-centers.php'))),
+    ));
+
+    // INTEGRATED SCHOOLS FIELDS
+    acf_add_local_field_group(array(
+        'key' => 'group_integrated_schools',
+        'title' => 'Programmes: Integrated Schools',
+        'fields' => array(
+            array('key' => 'field_integrated_hero_title', 'label' => 'Hero Title', 'name' => 'integrated_hero_title', 'type' => 'text', 'default_value' => 'Integrated School Program'),
+            array('key' => 'field_integrated_hero_desc', 'label' => 'Hero Description', 'name' => 'integrated_hero_desc', 'type' => 'textarea', 'default_value' => 'Zero commute, maximum focus. Expert entrance orientation delivered directly on your school campus.'),
+            array('key' => 'field_integrated_hero_img', 'label' => 'Hero Image', 'name' => 'integrated_hero_image', 'type' => 'image', 'return_format' => 'url'),
+            
+            // Features
+            array('key' => 'field_integrated_why_title', 'label' => 'Why Integrated Title', 'name' => 'integrated_why_title', 'type' => 'text', 'default_value' => 'Why the Integrated Path is Most Efficient'),
+            array('key' => 'field_integrated_item_1', 'label' => 'Single Timetable', 'name' => 'integrated_item_1', 'type' => 'textarea', 'default_value' => 'Zero Conflict: Entrance prep aligned perfectly with school teaching schedules.'),
+            array('key' => 'field_integrated_item_2', 'label' => 'The Gift of Time', 'name' => 'integrated_item_2', 'type' => 'textarea', 'default_value' => 'Save 3-4 hours daily of travel time, reclaimed for self-study and wellness.'),
+            array('key' => 'field_integrated_item_3', 'label' => 'Unified Mentorship', 'name' => 'integrated_item_3', 'type' => 'textarea', 'default_value' => 'On-site mentors bridging the gap between board theory and entrance apps.'),
+            array('key' => 'field_integrated_item_4', 'label' => 'On-Campus Analysis', 'name' => 'integrated_item_4', 'type' => 'textarea', 'default_value' => 'Mock exams in familiar environments with immediate collaborative analysis.'),
+        ),
+        'location' => array(array(array('param' => 'page_template', 'operator' => '==', 'value' => 'page-integrated-schools.php'))),
+    ));
+
+    // COURSES DETAIL SECTIONS (Phase 5)
+    acf_add_local_field_group(array(
+        'key' => 'group_courses_details',
+        'title' => 'Courses: Deep Details',
+        'fields' => array(
+            // pre, found, long, crash, rep, tuit, bridge
+            array('key' => 'field_cd_pre_title', 'label' => '1. Pre-Foundation Title', 'name' => 'cd_pre_title', 'type' => 'text'),
+            array('key' => 'field_cd_pre_image', 'label' => 'Pre-Foundation Image', 'name' => 'cd_pre_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_cd_pre_target', 'label' => 'Pre-Foundation Target', 'name' => 'cd_pre_target', 'type' => 'text'),
+            array('key' => 'field_cd_pre_desc', 'label' => 'Pre-Foundation Description', 'name' => 'cd_pre_desc', 'type' => 'textarea'),
+            array('key' => 'field_cd_pre_points', 'label' => 'Pre-Foundation Points', 'name' => 'cd_pre_points', 'type' => 'textarea'),
+            array('key' => 'field_cd_pre_signif', 'label' => 'Pre-Foundation Significance', 'name' => 'cd_pre_signif', 'type' => 'textarea'),
+
+            array('key' => 'field_cd_found_title', 'label' => '2. Foundation Title', 'name' => 'cd_found_title', 'type' => 'text'),
+            array('key' => 'field_cd_found_image', 'label' => 'Foundation Image', 'name' => 'cd_found_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_cd_found_target', 'label' => 'Foundation Target', 'name' => 'cd_found_target', 'type' => 'text'),
+            array('key' => 'field_cd_found_desc', 'label' => 'Foundation Description', 'name' => 'cd_found_desc', 'type' => 'textarea'),
+            array('key' => 'field_cd_found_points', 'label' => 'Foundation Points', 'name' => 'cd_found_points', 'type' => 'textarea'),
+            array('key' => 'field_cd_found_signif', 'label' => 'Foundation Significance', 'name' => 'cd_found_signif', 'type' => 'textarea'),
+
+            array('key' => 'field_cd_long_title', 'label' => '3. Long-Term Title', 'name' => 'cd_long_title', 'type' => 'text'),
+            array('key' => 'field_cd_long_image', 'label' => 'Long-Term Image', 'name' => 'cd_long_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_cd_long_target', 'label' => 'Long-Term Target', 'name' => 'cd_long_target', 'type' => 'text'),
+            array('key' => 'field_cd_long_desc', 'label' => 'Long-Term Description', 'name' => 'cd_long_desc', 'type' => 'textarea'),
+            array('key' => 'field_cd_long_points', 'label' => 'Long-Term Points', 'name' => 'cd_long_points', 'type' => 'textarea'),
+            array('key' => 'field_cd_long_signif', 'label' => 'Long-Term Significance', 'name' => 'cd_long_signif', 'type' => 'textarea'),
+
+            array('key' => 'field_cd_crash_title', 'label' => '4. Crash Course Title', 'name' => 'cd_crash_title', 'type' => 'text'),
+            array('key' => 'field_cd_crash_image', 'label' => 'Crash Course Image', 'name' => 'cd_crash_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_cd_crash_target', 'label' => 'Crash Course Target', 'name' => 'cd_crash_target', 'type' => 'text'),
+            array('key' => 'field_cd_crash_desc', 'label' => 'Crash Course Description', 'name' => 'cd_crash_desc', 'type' => 'textarea'),
+            array('key' => 'field_cd_crash_points', 'label' => 'Crash Course Points', 'name' => 'cd_crash_points', 'type' => 'textarea'),
+            array('key' => 'field_cd_crash_signif', 'label' => 'Crash Course Significance', 'name' => 'cd_crash_signif', 'type' => 'textarea'),
+
+            array('key' => 'field_cd_rep_title', 'label' => '5. Repeaters Title', 'name' => 'cd_rep_title', 'type' => 'text'),
+            array('key' => 'field_cd_rep_image', 'label' => 'Repeaters Image', 'name' => 'cd_rep_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_cd_rep_target', 'label' => 'Repeaters Target', 'name' => 'cd_rep_target', 'type' => 'text'),
+            array('key' => 'field_cd_rep_desc', 'label' => 'Repeaters Description', 'name' => 'cd_rep_desc', 'type' => 'textarea'),
+            array('key' => 'field_cd_rep_points', 'label' => 'Repeaters Points', 'name' => 'cd_rep_points', 'type' => 'textarea'),
+            array('key' => 'field_cd_rep_signif', 'label' => 'Repeaters Significance', 'name' => 'cd_rep_signif', 'type' => 'textarea'),
+
+            array('key' => 'field_cd_tuit_title', 'label' => '6. Tuition Title', 'name' => 'cd_tuit_title', 'type' => 'text'),
+            array('key' => 'field_cd_tuit_image', 'label' => 'Tuition Image', 'name' => 'cd_tuit_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_cd_tuit_target', 'label' => 'Tuition Target', 'name' => 'cd_tuit_target', 'type' => 'text'),
+            array('key' => 'field_cd_tuit_desc', 'label' => 'Tuition Description', 'name' => 'cd_tuit_desc', 'type' => 'textarea'),
+            array('key' => 'field_cd_tuit_points', 'label' => 'Tuition Points', 'name' => 'cd_tuit_points', 'type' => 'textarea'),
+            array('key' => 'field_cd_tuit_signif', 'label' => 'Tuition Significance', 'name' => 'cd_tuit_signif', 'type' => 'textarea'),
+
+            array('key' => 'field_cd_bridge_title', 'label' => '7. Bridge Course Title', 'name' => 'cd_bridge_title', 'type' => 'text'),
+            array('key' => 'field_cd_bridge_image', 'label' => 'Bridge Course Image', 'name' => 'cd_bridge_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_cd_bridge_target', 'label' => 'Bridge Course Target', 'name' => 'cd_bridge_target', 'type' => 'text'),
+            array('key' => 'field_cd_bridge_desc', 'label' => 'Bridge Course Description', 'name' => 'cd_bridge_desc', 'type' => 'textarea'),
+            array('key' => 'field_cd_bridge_points', 'label' => 'Bridge Course Points', 'name' => 'cd_bridge_points', 'type' => 'textarea'),
+            array('key' => 'field_cd_bridge_signif', 'label' => 'Bridge Course Significance', 'name' => 'cd_bridge_signif', 'type' => 'textarea'),
+        ),
+        'location' => array(array(array('param' => 'page_template', 'operator' => '==', 'value' => 'page-courses.php'))),
+    ));
+
+
+    // ABOUT US PAGE FIELDS (Phase 7)
+    acf_add_local_field_group(array(
+        'key' => 'group_about_page',
+        'title' => 'About Us Page Content',
+        'fields' => array(
+            // Hero Section
+            array('key' => 'field_about_hero_title', 'label' => 'Hero Title', 'name' => 'about_hero_title', 'type' => 'text'),
+            array('key' => 'field_about_hero_subtitle', 'label' => 'Hero Subtitle', 'name' => 'about_hero_subtitle', 'type' => 'text'),
+            array('key' => 'field_about_hero_image', 'label' => 'Hero Background Image', 'name' => 'about_hero_image', 'type' => 'image', 'return_format' => 'url'),
+            
+            // Main About Section
+            array('key' => 'field_about_main_title', 'label' => 'Main Section Title', 'name' => 'about_main_title', 'type' => 'text'),
+            array('key' => 'field_about_main_content', 'label' => 'Main About Content', 'name' => 'about_main_content', 'type' => 'wysiwyg'),
+            array('key' => 'field_about_main_image', 'label' => 'Main Section Image', 'name' => 'about_main_image', 'type' => 'image', 'return_format' => 'url'),
+            
+            // Philosophy Section
+            array('key' => 'field_about_philosophy_title', 'label' => 'Philosophy Title', 'name' => 'about_philosophy_title', 'type' => 'text'),
+            array('key' => 'field_about_philosophy_content', 'label' => 'Philosophy Content', 'name' => 'about_philosophy_content', 'type' => 'wysiwyg'),
+            
+            // Programmes Section
+            array('key' => 'field_about_programmes_title', 'label' => 'Programmes Section Title', 'name' => 'about_programmes_title', 'type' => 'text'),
+            array('key' => 'field_about_programmes_desc', 'label' => 'Programmes Description', 'name' => 'about_programmes_desc', 'type' => 'textarea'),
+            
+            // Founder Section
+            array('key' => 'field_founder_name', 'label' => 'Founder Name', 'name' => 'founder_name', 'type' => 'text'),
+            array('key' => 'field_founder_title', 'label' => 'Founder Title/Designation', 'name' => 'founder_title', 'type' => 'text'),
+            array('key' => 'field_founder_photo', 'label' => 'Founder Photo', 'name' => 'founder_photo', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_founder_signature', 'label' => 'Founder Signature Image', 'name' => 'founder_signature', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_founder_message', 'label' => 'Founder Message', 'name' => 'founder_message', 'type' => 'wysiwyg'),
+            
+            // Mission & Vision
+            array('key' => 'field_about_mission_title', 'label' => 'Mission Title', 'name' => 'about_mission_title', 'type' => 'text'),
+            array('key' => 'field_about_mission_text', 'label' => 'Mission Text', 'name' => 'about_mission_text', 'type' => 'textarea'),
+            array('key' => 'field_about_vision_title', 'label' => 'Vision Title', 'name' => 'about_vision_title', 'type' => 'text'),
+            array('key' => 'field_about_vision_text', 'label' => 'Vision Text', 'name' => 'about_vision_text', 'type' => 'textarea'),
+            
+            // Legacy/Story Section
+            array('key' => 'field_legacy_title', 'label' => 'Story Section Title', 'name' => 'legacy_title', 'type' => 'text'),
+            array('key' => 'field_legacy_text', 'label' => 'Story Content', 'name' => 'legacy_text', 'type' => 'wysiwyg'),
+            array('key' => 'field_legacy_side_image', 'label' => 'Story Section Image', 'name' => 'legacy_side_image', 'type' => 'image', 'return_format' => 'url'),
+            
+            // Infrastructure
+            array('key' => 'field_infra_title', 'label' => 'Infrastructure Title', 'name' => 'infra_title', 'type' => 'text'),
+            array('key' => 'field_infra_desc', 'label' => 'Infrastructure Description', 'name' => 'infra_desc', 'type' => 'text'),
+            array('key' => 'field_infra_1_title', 'label' => 'Infra Item 1 Title', 'name' => 'infra_1_title', 'type' => 'text'),
+            array('key' => 'field_infra_1_image', 'label' => 'Infra Item 1 Image', 'name' => 'infra_1_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_infra_2_title', 'label' => 'Infra Item 2 Title', 'name' => 'infra_2_title', 'type' => 'text'),
+            array('key' => 'field_infra_2_image', 'label' => 'Infra Item 2 Image', 'name' => 'infra_2_image', 'type' => 'image', 'return_format' => 'url'),
+            array('key' => 'field_infra_3_title', 'label' => 'Infra Item 3 Title', 'name' => 'infra_3_title', 'type' => 'text'),
+            array('key' => 'field_infra_3_image', 'label' => 'Infra Item 3 Image', 'name' => 'infra_3_image', 'type' => 'image', 'return_format' => 'url'),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page_template',
+                    'operator' => '==',
+                    'value' => 'page-about.php',
+                ),
+            ),
+        ),
+    ));
+
+    // Blog Post Featured Image Field (Phase 8)
+    acf_add_local_field_group(array(
+        'key' => 'group_blog_post_image',
+        'title' => 'Blog Post Featured Image',
+        'fields' => array(
+            array(
+                'key' => 'field_blog_featured_image',
+                'label' => 'Featured Image',
+                'name' => 'blog_featured_image',
+                'type' => 'image',
+                'instructions' => 'Upload a featured image for this blog post. Recommended size: 1920x1080px',
+                'required' => 0,
+                'return_format' => 'url',
+                'preview_size' => 'medium',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'post',
+                ),
+            ),
+        ),
+    ));
+
+    // News Post Type Registration (Phase 9)
+    function register_news_post_type() {
+        $labels = array(
+            'name'                  => _x( 'News', 'Post Type General Name', 'text_domain' ),
+            'singular_name'         => _x( 'News', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'             => __( 'News', 'text_domain' ),
+            'name_admin_bar'        => __( 'News', 'text_domain' ),
+            'archives'              => __( 'News Archives', 'text_domain' ),
+            'attributes'            => __( 'News Attributes', 'text_domain' ),
+            'parent_item_colon'     => __( 'Parent News:', 'text_domain' ),
+            'all_items'             => __( 'All News', 'text_domain' ),
+            'add_new_item'          => __( 'Add New News Item', 'text_domain' ),
+            'add_new'               => __( 'Add New', 'text_domain' ),
+            'new_item'              => __( 'New News Item', 'text_domain' ),
+            'edit_item'             => __( 'Edit News Item', 'text_domain' ),
+            'update_item'           => __( 'Update News Item', 'text_domain' ),
+            'view_item'             => __( 'View News Item', 'text_domain' ),
+            'view_items'            => __( 'View News', 'text_domain' ),
+            'search_items'          => __( 'Search News', 'text_domain' ),
+            'not_found'             => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+            'featured_image'        => __( 'News Featured Image', 'text_domain' ),
+            'set_featured_image'    => __( 'Set news featured image', 'text_domain' ),
+            'remove_featured_image' => __( 'Remove news featured image', 'text_domain' ),
+            'use_featured_image'    => __( 'Use as news featured image', 'text_domain' ),
+            'insert_into_item'      => __( 'Insert into news', 'text_domain' ),
+            'uploaded_to_this_item' => __( 'Uploaded to this news', 'text_domain' ),
+            'items_list'            => __( 'News list', 'text_domain' ),
+            'items_list_navigation' => __( 'News list navigation', 'text_domain' ),
+            'filter_items_list'     => __( 'Filter news list', 'text_domain' ),
+        );
+        $args = array(
+            'label'                 => __( 'News', 'text_domain' ),
+            'description'           => __( 'Latest education and exam news', 'text_domain' ),
+            'labels'                => $labels,
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+            'hierarchical'          => false,
+            'public'                => true,
+            'show_ui'               => true,
+            'show_in_menu'          => true,
+            'menu_position'         => 5,
+            'menu_icon'             => 'dashicons-megaphone',
+            'show_in_admin_bar'     => true,
+            'show_in_nav_menus'     => true,
+            'can_export'            => true,
+            'has_archive'           => true,
+            'exclude_from_search'   => false,
+            'publicly_queryable'    => true,
+            'capability_type'       => 'post',
+            'show_in_rest'          => true,
+            'rewrite'               => array('slug' => 'news'),
+        );
+        register_post_type( 'news', $args );
+    }
+    add_action( 'init', 'register_news_post_type', 0 );
+
+    // News Metadata ACF Fields (Phase 9)
+    acf_add_local_field_group(array(
+        'key' => 'group_news_metadata',
+        'title' => 'News Metadata',
+        'fields' => array(
+            array(
+                'key' => 'field_news_status',
+                'label' => 'Registration Status',
+                'name' => 'news_registration_status',
+                'type' => 'select',
+                'instructions' => 'Is registration currently open?',
+                'required' => 0,
+                'choices' => array(
+                    'none' => 'None',
+                    'live' => 'LIVE',
+                    'closing_soon' => 'Closing Soon',
+                    'closed' => 'CLOSED',
+                    'upcoming' => 'Upcoming',
+                ),
+                'default_value' => 'none',
+                'return_format' => 'value',
+            ),
+            array(
+                'key' => 'field_news_type',
+                'label' => 'News Category',
+                'name' => 'news_type',
+                'type' => 'select',
+                'instructions' => 'Type of news item',
+                'required' => 0,
+                'choices' => array(
+                    'medical' => 'Medical (NEET)',
+                    'engineering' => 'Engineering (JEE/KEAM)',
+                    'defence' => 'Defence & Design',
+                    'specialized' => 'Specialized Tests',
+                    'general' => 'General Updates',
+                ),
+                'default_value' => 'general',
+                'return_format' => 'value',
+            ),
+            array(
+                'key' => 'field_news_important_dates',
+                'label' => 'Important Dates Snippet',
+                'name' => 'news_dates_snippet',
+                'type' => 'textarea',
+                'instructions' => 'Briefly list important dates (shown on cards)',
+                'required' => 0,
+                'rows' => 3,
+            ),
+            array(
+                'key' => 'field_news_source',
+                'label' => 'Source Link / Official Website',
+                'name' => 'news_source_url',
+                'type' => 'url',
+                'instructions' => 'Link to official notification or website',
+                'required' => 0,
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'news',
+                ),
+            ),
+        ),
+    ));
+
+    // Flush rewrite rules on theme activation/switch for news CPT
+    function bodhi_flush_news_rewrites() {
+        register_news_post_type();
+        flush_rewrite_rules();
+    }
+    add_action( 'after_switch_theme', 'bodhi_flush_news_rewrites' );
