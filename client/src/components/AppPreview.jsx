@@ -18,68 +18,23 @@ export default function AppPreview() {
         }}>
           {/* Phone Mockup Frame */}
           <div style={{
-            width: 240,
-            height: 440,
-            border: '8px solid #0e1a1e',
-            borderRadius: 36,
-            background: '#e3f4ee',
-            margin: 'auto',
-            padding: 12,
             display: 'flex',
-            flexDirection: 'column',
-            gap: 10,
-            boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-            color: '#14313a'
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '10px 0'
           }}>
-            <div style={{
-              background: 'linear-gradient(160deg, #0d7a8a, #0b5f6e)',
-              color: '#fff',
-              padding: '12px 10px',
-              borderRadius: 16
-            }}>
-              <div style={{ fontSize: 11, opacity: 0.9 }}>Good morning</div>
-              <div style={{ fontWeight: 700, fontSize: 15 }}>Vishnu S.</div>
-              <div style={{ fontSize: 10, opacity: 0.8 }}>Class 11 • Karamana</div>
-            </div>
-
-            <div style={{
-              background: '#fff',
-              borderRadius: 12,
-              padding: 10,
-              fontSize: 12,
-              boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
-            }}>
-              <span style={{ fontSize: 10, background: '#fff3d0', color: '#8a5a00', padding: '2px 6px', borderRadius: 4, fontWeight: 700 }}>
-                TODAY'S CLASS • 9:00 AM
-              </span>
-              <div style={{ fontWeight: 700, marginTop: 4 }}>Physics: Laws of Motion</div>
-              <div style={{ fontSize: 11, color: '#56706a' }}>Prof. Rajesh Nair</div>
-            </div>
-
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
-              gap: 6,
-              textAlign: 'center',
-              fontSize: 10,
-              fontWeight: 600
-            }}>
-              <div style={{ background: '#fff', padding: 8, borderRadius: 10 }}>🗓️ Timetable</div>
-              <div style={{ background: '#fff', padding: 8, borderRadius: 10 }}>🏋️ Workouts</div>
-              <div style={{ background: '#fff', padding: 8, borderRadius: 10 }}>❓ Doubt Box</div>
-            </div>
-
-            <div style={{
-              background: 'linear-gradient(135deg, #0b3b45, #0d9aa5)',
-              color: '#fff',
-              padding: 10,
-              borderRadius: 12,
-              marginTop: 'auto',
-              fontSize: 11
-            }}>
-              <div style={{ fontSize: 9, opacity: 0.8 }}>BODHI IGNITE SERIES</div>
-              <div style={{ fontWeight: 800, color: '#f5a623' }}>NEET Mock Test 04</div>
-            </div>
+            <img
+              src="/bodhi-mobile-app.png"
+              alt="Bodhi Student Portal Mobile App"
+              style={{
+                width: '100%',
+                maxWidth: 290,
+                height: 'auto',
+                display: 'block',
+                filter: 'drop-shadow(0 20px 35px rgba(0,0,0,0.35))',
+                transition: 'transform 0.3s ease'
+              }}
+            />
           </div>
 
           {/* Right description */}
