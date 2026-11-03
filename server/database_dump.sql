@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 9.1.0, for Win64 (x86_64)
+﻿-- MySQL dump 10.13  Distrib 9.1.0, for Win64 (x86_64)
 --
 -- Host: localhost    Database: bodhi_new
 -- ------------------------------------------------------
@@ -34,7 +34,7 @@ CREATE TABLE `attendance` (
   KEY `marked_by` (`marked_by`),
   CONSTRAINT `attendance_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `users` (`id`),
   CONSTRAINT `attendance_ibfk_2` FOREIGN KEY (`marked_by`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +65,7 @@ CREATE TABLE `batches` (
   KEY `centre_id` (`centre_id`),
   CONSTRAINT `batches_ibfk_1` FOREIGN KEY (`course_id`) REFERENCES `courses` (`id`),
   CONSTRAINT `batches_ibfk_2` FOREIGN KEY (`centre_id`) REFERENCES `centres` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -90,7 +90,7 @@ CREATE TABLE `centres` (
   `location` text,
   `map_url` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,7 +127,7 @@ CREATE TABLE `courses` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `slug` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -136,7 +136,7 @@ CREATE TABLE `courses` (
 
 LOCK TABLES `courses` WRITE;
 /*!40000 ALTER TABLE `courses` DISABLE KEYS */;
-INSERT INTO `courses` VALUES (1,'Pre-Foundation','pre-foundation','Igniting the Spark of Science & Math discovery for young minds.','Target Group: Classes 5, 6, and 7. Instead of rote memorization, we turn natural curiosity into a love for Science and Mathematics through fearless learning, mindful play, and nurturing mentorship.','#0b7f6e','🌱','Classes 5, 6, 7','[\"Discovery-based learning\", \"Olympiad & Talent exams\", \"Nurturing mentorship\", \"Mindful breathing\"]',NULL,1,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(2,'Foundation','foundation','Building the Roots of Excellence for NEET, JEE & National Entrances.','Target Group: Classes 8, 9, and 10. Bridges the gap between school textbooks and advanced entrance logic at a comfortable pace with smart analytics and conceptual clarity.','#1a8a55','🏛️','Classes 8, 9, 10','[\"30-40% entrance syllabus covered early\", \"Stress-free 3-year preparation\", \"Logical clarity\", \"Smart analytics\"]',NULL,2,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(3,'Long-term (+1 & +2)','long-term','Excellence Your Way — Integrated school, weekend, or tuition hybrid batches.','Target Group: Classes 11 and 12 (+1 & +2). A 2-year marathon covering NEET, JEE, and KEAM with high consistency, mental resilience, and continuous personalized calibration.','#0d7f93','🎯','Classes 11 & 12','[\"Integrated School Program\", \"Weekend Batches\", \"Tuition + Entrance hybrid\", \"2-year consistent mentoring\"]',NULL,3,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(4,'Crash Course','crash-course','Your Final Step to Entrance Ranker — Speed, accuracy & mental endurance.','Target Group: Post Class 12. Strategic direction and intensive practice directly after board exams to turn subject knowledge into top entrance ranks with zero panic.','#d6453d','⚡','Post Class 12','[\"Time management shortcuts\", \"Stress recovery & peak mental clarity\", \"Daily mock drills\", \"Doubt clearance\"]',NULL,4,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(5,'Repeaters (Droppers)','repeaters','Refine. Rebuild. Reclaim. Transforming lost marks into earned ranks.','Target Group: Class 12 Pass-outs dedicating a year exclusively to NEET, JEE, or KEAM. Analytical diagnostics of past attempts, daily mindfulness, and advanced problem-solving.','#b86e00','🔥','Class 12 Pass-outs','[\"100% focused gap-year investment\", \"Diagnostic error analysis\", \"Zen-like resilience\", \"Specialist dropper mentors\"]',NULL,5,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(6,'Academic Tuition','academic-tuition','Mastering the Foundation — Conceptual clarity & Board Exam excellence.','Focus exclusively on the Class 11 & 12 Board Exam curriculum. Total subject mastery without entrance pressure so students enjoy science and score 95%+ in boards.','#5a35a0','📖','Classes 11 & 12','[\"Concept-first mentorship\", \"Calm classroom environment\", \"Board exam pattern diagnostics\", \"Solid academic marks\"]',NULL,6,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(7,'Bridge Course','bridge-course','Transition with Confidence — From 10th-grade to 11th-grade Science.','Conducted during Summer Holidays for students moving from Class 10 to Class 11. Introduces complex topics like Calculus and Organic Chemistry gently with a solid head start.','#e8781e','🌉','Class 10 to 11 moving','[\"Summer break head start\", \"Smoothing the steep science curve\", \"Aptitude readiness analysis\", \"Fun & creative learning\"]',NULL,7,1,'2026-11-03 07:44:55','2026-11-03 07:44:55');
+INSERT INTO `courses` VALUES (1,'Pre-Foundation','pre-foundation','Igniting the Spark of Science & Math discovery for young minds.','Target Group: Classes 5, 6, and 7. Instead of rote memorization, we turn natural curiosity into a love for Science and Mathematics through fearless learning, mindful play, and nurturing mentorship.','#0b7f6e','ðŸŒ±','Classes 5, 6, 7','[\"Discovery-based learning\", \"Olympiad & Talent exams\", \"Nurturing mentorship\", \"Mindful breathing\"]',NULL,1,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(2,'Foundation','foundation','Building the Roots of Excellence for NEET, JEE & National Entrances.','Target Group: Classes 8, 9, and 10. Bridges the gap between school textbooks and advanced entrance logic at a comfortable pace with smart analytics and conceptual clarity.','#1a8a55','ðŸ›ï¸','Classes 8, 9, 10','[\"30-40% entrance syllabus covered early\", \"Stress-free 3-year preparation\", \"Logical clarity\", \"Smart analytics\"]',NULL,2,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(3,'Long-term (+1 & +2)','long-term','Excellence Your Way â€” Integrated school, weekend, or tuition hybrid batches.','Target Group: Classes 11 and 12 (+1 & +2). A 2-year marathon covering NEET, JEE, and KEAM with high consistency, mental resilience, and continuous personalized calibration.','#0d7f93','ðŸŽ¯','Classes 11 & 12','[\"Integrated School Program\", \"Weekend Batches\", \"Tuition + Entrance hybrid\", \"2-year consistent mentoring\"]',NULL,3,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(4,'Crash Course','crash-course','Your Final Step to Entrance Ranker â€” Speed, accuracy & mental endurance.','Target Group: Post Class 12. Strategic direction and intensive practice directly after board exams to turn subject knowledge into top entrance ranks with zero panic.','#d6453d','âš¡','Post Class 12','[\"Time management shortcuts\", \"Stress recovery & peak mental clarity\", \"Daily mock drills\", \"Doubt clearance\"]',NULL,4,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(5,'Repeaters (Droppers)','repeaters','Refine. Rebuild. Reclaim. Transforming lost marks into earned ranks.','Target Group: Class 12 Pass-outs dedicating a year exclusively to NEET, JEE, or KEAM. Analytical diagnostics of past attempts, daily mindfulness, and advanced problem-solving.','#b86e00','ðŸ”¥','Class 12 Pass-outs','[\"100% focused gap-year investment\", \"Diagnostic error analysis\", \"Zen-like resilience\", \"Specialist dropper mentors\"]',NULL,5,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(6,'Academic Tuition','academic-tuition','Mastering the Foundation â€” Conceptual clarity & Board Exam excellence.','Focus exclusively on the Class 11 & 12 Board Exam curriculum. Total subject mastery without entrance pressure so students enjoy science and score 95%+ in boards.','#5a35a0','ðŸ“–','Classes 11 & 12','[\"Concept-first mentorship\", \"Calm classroom environment\", \"Board exam pattern diagnostics\", \"Solid academic marks\"]',NULL,6,1,'2026-11-03 07:44:55','2026-11-03 07:44:55'),(7,'Bridge Course','bridge-course','Transition with Confidence â€” From 10th-grade to 11th-grade Science.','Conducted during Summer Holidays for students moving from Class 10 to Class 11. Introduces complex topics like Calculus and Organic Chemistry gently with a solid head start.','#e8781e','ðŸŒ‰','Class 10 to 11 moving','[\"Summer break head start\", \"Smoothing the steep science curve\", \"Aptitude readiness analysis\", \"Fun & creative learning\"]',NULL,7,1,'2026-11-03 07:44:55','2026-11-03 07:44:55');
 /*!40000 ALTER TABLE `courses` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -160,7 +160,7 @@ CREATE TABLE `doubts` (
   KEY `answered_by` (`answered_by`),
   CONSTRAINT `doubts_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `users` (`id`),
   CONSTRAINT `doubts_ibfk_2` FOREIGN KEY (`answered_by`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -185,7 +185,7 @@ CREATE TABLE `faqs` (
   `answer` text NOT NULL,
   `display_order` int DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -194,7 +194,7 @@ CREATE TABLE `faqs` (
 
 LOCK TABLES `faqs` WRITE;
 /*!40000 ALTER TABLE `faqs` DISABLE KEYS */;
-INSERT INTO `faqs` VALUES (1,'What programs are available at Bodhi Education?','We offer Pre-Foundation (Classes 5-7), Foundation (Classes 8-10), Long-term (+1, +2), Crash courses, Repeater programs, Academic Tuition, and Summer Bridge courses for NEET, JEE, and KEAM.',1),(2,'Where are the Bodhi learning centres located?','We have physical offline centres at Karamana and Neyyattinkara in Thiruvananthapuram, as well as a full Bodhi Online platform accessible anywhere.',2),(3,'How does the Hybrid Learning model work?','Students learn before class through short preview videos, attend interactive in-person lectures, and reinforce knowledge with post-class workouts and doubt sessions.',3),(4,'Can parents track their child’s attendance and progress?','Yes! The Bodhi Portal provides a dedicated Parent login where you can see daily attendance, test marks, fee receipts, and connect directly with your child’s mentor.',4),(5,'What is the role of the Mentor at Bodhi?','Mentors are experienced guides who address stress, exam anxiety, time management, and motivation, ensuring students maintain high morale and well-being.',5),(6,'How can I enroll in a course?','You can register directly on our website, call us at +91 89211 80598, or visit our Karamana or Neyyattinkara centres for a free counseling session.',6);
+INSERT INTO `faqs` VALUES (1,'What programs are available at Bodhi Education?','We offer Pre-Foundation (Classes 5-7), Foundation (Classes 8-10), Long-term (+1, +2), Crash courses, Repeater programs, Academic Tuition, and Summer Bridge courses for NEET, JEE, and KEAM.',1),(2,'Where are the Bodhi learning centres located?','We have physical offline centres at Karamana and Neyyattinkara in Thiruvananthapuram, as well as a full Bodhi Online platform accessible anywhere.',2),(3,'How does the Hybrid Learning model work?','Students learn before class through short preview videos, attend interactive in-person lectures, and reinforce knowledge with post-class workouts and doubt sessions.',3),(4,'Can parents track their childâ€™s attendance and progress?','Yes! The Bodhi Portal provides a dedicated Parent login where you can see daily attendance, test marks, fee receipts, and connect directly with your childâ€™s mentor.',4),(5,'What is the role of the Mentor at Bodhi?','Mentors are experienced guides who address stress, exam anxiety, time management, and motivation, ensuring students maintain high morale and well-being.',5),(6,'How can I enroll in a course?','You can register directly on our website, call us at +91 89211 80598, or visit our Karamana or Neyyattinkara centres for a free counseling session.',6);
 /*!40000 ALTER TABLE `faqs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -216,7 +216,7 @@ CREATE TABLE `fees` (
   PRIMARY KEY (`id`),
   KEY `student_id` (`student_id`),
   CONSTRAINT `fees_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -244,7 +244,7 @@ CREATE TABLE `hero_slides` (
   `stats` json DEFAULT NULL,
   `display_order` int DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -253,7 +253,7 @@ CREATE TABLE `hero_slides` (
 
 LOCK TABLES `hero_slides` WRITE;
 /*!40000 ALTER TABLE `hero_slides` DISABLE KEYS */;
-INSERT INTO `hero_slides` VALUES (1,'Awaken the Genius Within','🍃 Knowledge is Power','World-class coaching for NEET, JEE, KEAM, and Foundation in a serene, high-performance environment.','#075c50','{\"gurus\": \"120+\", \"success\": \"98%\", \"students\": \"5,000+\"}',1),(2,'Hybrid Learning That Works','🚀 Learn • Practice • Master','Combine the best of offline classroom teaching with 24/7 web & mobile app access.','#0b7f6e','{\"centres\": \"2 + Online\", \"success\": \"98%\", \"students\": \"5,000+\"}',2);
+INSERT INTO `hero_slides` VALUES (1,'Awaken the Genius Within','ðŸƒ Knowledge is Power','World-class coaching for NEET, JEE, KEAM, and Foundation in a serene, high-performance environment.','#075c50','{\"gurus\": \"120+\", \"success\": \"98%\", \"students\": \"5,000+\"}',1),(2,'Hybrid Learning That Works','ðŸš€ Learn â€¢ Practice â€¢ Master','Combine the best of offline classroom teaching with 24/7 web & mobile app access.','#0b7f6e','{\"centres\": \"2 + Online\", \"success\": \"98%\", \"students\": \"5,000+\"}',2);
 /*!40000 ALTER TABLE `hero_slides` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -275,7 +275,7 @@ CREATE TABLE `leave_requests` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `leave_requests_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -305,7 +305,7 @@ CREATE TABLE `media` (
   PRIMARY KEY (`id`),
   KEY `uploaded_by` (`uploaded_by`),
   CONSTRAINT `media_ibfk_1` FOREIGN KEY (`uploaded_by`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -337,7 +337,7 @@ CREATE TABLE `pages` (
   UNIQUE KEY `slug` (`slug`),
   KEY `updated_by` (`updated_by`),
   CONSTRAINT `pages_ibfk_1` FOREIGN KEY (`updated_by`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -346,7 +346,7 @@ CREATE TABLE `pages` (
 
 LOCK TABLES `pages` WRITE;
 /*!40000 ALTER TABLE `pages` DISABLE KEYS */;
-INSERT INTO `pages` VALUES (1,'about-us','Welcome to Bodhi Education','Bodhi Education is Kerala’s pioneering educational research and development platform, dedicated to empowering students by enhancing their skills and unlocking their true potential. We support the students to attain their goals. Comprising a dynamic team of academic experts, researchers, and technocrats, we collaborate to design innovative strategies and cutting-edge technologies that revolutionize India’s education sector.\n\nBodhi believes that, \"every child has his/her own uniqueness\". Find and shape them as future talents are the real task. Bodhi Education envisions itself as a unique and dynamic human resource development initiative dedicated to empowering students through a highly sophisticated coaching and support ecosystem. We aim to identify, strengthen, and refine the innate abilities of every learner, enabling them to dream confidently and achieve excellence in their chosen professional careers.\n\nThrough integrated academic excellence, mentorship-driven guidance, technology-enabled learning, and value-based education, Bodhi Education seeks to create competent, confident, and socially responsible professionals who contribute meaningfully to society.','About Bodhi Education, leading entrance coaching and educational research platform in Kerala.',NULL,'2026-11-03 07:44:55','2026-11-03 07:44:55');
+INSERT INTO `pages` VALUES (1,'about-us','Welcome to Bodhi Education','Bodhi Education is Keralaâ€™s pioneering educational research and development platform, dedicated to empowering students by enhancing their skills and unlocking their true potential. We support the students to attain their goals. Comprising a dynamic team of academic experts, researchers, and technocrats, we collaborate to design innovative strategies and cutting-edge technologies that revolutionize Indiaâ€™s education sector.\n\nBodhi believes that, \"every child has his/her own uniqueness\". Find and shape them as future talents are the real task. Bodhi Education envisions itself as a unique and dynamic human resource development initiative dedicated to empowering students through a highly sophisticated coaching and support ecosystem. We aim to identify, strengthen, and refine the innate abilities of every learner, enabling them to dream confidently and achieve excellence in their chosen professional careers.\n\nThrough integrated academic excellence, mentorship-driven guidance, technology-enabled learning, and value-based education, Bodhi Education seeks to create competent, confident, and socially responsible professionals who contribute meaningfully to society.','About Bodhi Education, leading entrance coaching and educational research platform in Kerala.',NULL,'2026-11-03 07:44:55','2026-11-03 07:44:55');
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -365,7 +365,7 @@ CREATE TABLE `services` (
   `color` varchar(20) DEFAULT '#0b7f6e',
   `display_order` int DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -374,7 +374,7 @@ CREATE TABLE `services` (
 
 LOCK TABLES `services` WRITE;
 /*!40000 ALTER TABLE `services` DISABLE KEYS */;
-INSERT INTO `services` VALUES (1,'Live & Recorded Classes','Stream interactive live sessions with Gurus or watch high-definition recordings anytime 24/7.','🎥','#0b7f6e',1),(2,'Smart Timetable & Reminders','Daily personalized schedules with notifications the day before so students arrive prepared.','🗓️','#075c50',2),(3,'Post-Class Workouts & Mocks','Practice immediate workouts after every class with instant marks, hints, and video solutions.','🏋️','#1a8a55',3),(4,'Doubt Clearance Box','Post doubts directly to subject specialists with step-by-step verified explanations within hours.','❓','#d6453d',4),(5,'Personal Mentor Connect','One-on-one psychological and academic guidance to overcome anxiety and build confidence.','👩‍🏫','#8a63d6',5),(6,'Attendance & Performance Tracking','Live punch-in monitoring, percentage calendars, and detailed report cards accessible by parents.','📊','#b86e00',6);
+INSERT INTO `services` VALUES (1,'Live & Recorded Classes','Stream interactive live sessions with Gurus or watch high-definition recordings anytime 24/7.','ðŸŽ¥','#0b7f6e',1),(2,'Smart Timetable & Reminders','Daily personalized schedules with notifications the day before so students arrive prepared.','ðŸ—“ï¸','#075c50',2),(3,'Post-Class Workouts & Mocks','Practice immediate workouts after every class with instant marks, hints, and video solutions.','ðŸ‹ï¸','#1a8a55',3),(4,'Doubt Clearance Box','Post doubts directly to subject specialists with step-by-step verified explanations within hours.','â“','#d6453d',4),(5,'Personal Mentor Connect','One-on-one psychological and academic guidance to overcome anxiety and build confidence.','ðŸ‘©â€ðŸ«','#8a63d6',5),(6,'Attendance & Performance Tracking','Live punch-in monitoring, percentage calendars, and detailed report cards accessible by parents.','ðŸ“Š','#b86e00',6);
 /*!40000 ALTER TABLE `services` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -391,7 +391,7 @@ CREATE TABLE `site_settings` (
   `setting_value` text,
   PRIMARY KEY (`id`),
   UNIQUE KEY `setting_key` (`setting_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -400,7 +400,7 @@ CREATE TABLE `site_settings` (
 
 LOCK TABLES `site_settings` WRITE;
 /*!40000 ALTER TABLE `site_settings` DISABLE KEYS */;
-INSERT INTO `site_settings` VALUES (1,'site_name','Bodhi Education'),(2,'tagline','Awaken the Genius Within'),(3,'logo_url','/logo.png'),(4,'phone','+91 89211 80598'),(5,'whatsapp','918921180598'),(6,'email','info@bodhieducation.com'),(7,'address','TC No. 73/1970-2 (MSS Arcade), Manacaud, Thiruvananthapuram, Kerala, India, 695009'),(8,'hours','Mon – Fri 8:00 AM – 8:00 PM'),(9,'news_ticker','🎯 NEET & JEE 2027 admissions open | Bodhi Science Centres at Karamana & Neyyattinkara | Free demo classes available');
+INSERT INTO `site_settings` VALUES (1,'site_name','Bodhi Education'),(2,'tagline','Awaken the Genius Within'),(3,'logo_url','/logo.png'),(4,'phone','+91 89211 80598'),(5,'whatsapp','918921180598'),(6,'email','info@bodhieducation.com'),(7,'address','TC No. 73/1970-2 (MSS Arcade), Manacaud, Thiruvananthapuram, Kerala, India, 695009'),(8,'hours','Mon â€“ Fri 8:00 AM â€“ 8:00 PM'),(9,'news_ticker','ðŸŽ¯ NEET & JEE 2027 admissions open | Bodhi Science Centres at Karamana & Neyyattinkara | Free demo classes available');
 /*!40000 ALTER TABLE `site_settings` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -420,7 +420,7 @@ CREATE TABLE `testimonials` (
   `avatar_url` varchar(500) DEFAULT NULL,
   `display_order` int DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -429,7 +429,7 @@ CREATE TABLE `testimonials` (
 
 LOCK TABLES `testimonials` WRITE;
 /*!40000 ALTER TABLE `testimonials` DISABLE KEYS */;
-INSERT INTO `testimonials` VALUES (1,'Dr. Rajesh Kumar (Parent)','Father of Ananya (NEET AIR 412)','The calm, focused Bodhi approach changed Ananya’s preparation completely. She cracked NEET without feeling burned out.',5,NULL,1),(2,'Adithya S. (Student)','JEE Advanced Ranker','The teachers at Karamana centre make Physics so intuitive. The post-class workouts and doubt clearance box were game changers.',5,NULL,2),(3,'Meera Nair (Student)','Class 12 Board 98.4%','Tuition plus entrance hybrid batch gave me the exact balance I needed between school examinations and competitive entrance prep.',5,NULL,3);
+INSERT INTO `testimonials` VALUES (1,'Dr. Rajesh Kumar (Parent)','Father of Ananya (NEET AIR 412)','The calm, focused Bodhi approach changed Ananyaâ€™s preparation completely. She cracked NEET without feeling burned out.',5,NULL,1),(2,'Adithya S. (Student)','JEE Advanced Ranker','The teachers at Karamana centre make Physics so intuitive. The post-class workouts and doubt clearance box were game changers.',5,NULL,2),(3,'Meera Nair (Student)','Class 12 Board 98.4%','Tuition plus entrance hybrid batch gave me the exact balance I needed between school examinations and competitive entrance prep.',5,NULL,3);
 /*!40000 ALTER TABLE `testimonials` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -453,7 +453,7 @@ CREATE TABLE `timetable` (
   KEY `teacher_id` (`teacher_id`),
   CONSTRAINT `timetable_ibfk_1` FOREIGN KEY (`batch_id`) REFERENCES `batches` (`id`),
   CONSTRAINT `timetable_ibfk_2` FOREIGN KEY (`teacher_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -485,7 +485,7 @@ CREATE TABLE `users` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
