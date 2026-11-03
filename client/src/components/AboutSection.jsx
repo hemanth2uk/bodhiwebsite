@@ -30,8 +30,62 @@ export default function AboutSection() {
             <p>{about.mission}</p>
             <a href="#contact" className="w-b p" style={{ marginTop: 20 }}>Learn more →</a>
           </div>
-          <div className="w-pan" style={{ display: 'grid', placeItems: 'center', background: '#fff', borderRadius: 'var(--r)', padding: 32, boxShadow: 'var(--sh)' }}>
-            <img src="/logo.svg" alt="Bodhi Education" style={{ width: '70%', maxWidth: 240, height: 'auto', display: 'block' }} />
+          <div className="w-pan" style={{
+            position: 'relative',
+            overflow: 'hidden',
+            borderRadius: '24px',
+            boxShadow: '0 20px 40px rgba(7, 92, 80, 0.18)',
+            border: '2px solid rgba(31, 179, 196, 0.25)',
+            aspectRatio: '4/3',
+            background: 'linear-gradient(135deg, #075c50, #0b7f6e)',
+            minHeight: 340
+          }}>
+            <img
+              src="/about-education.jpg"
+              alt="Bodhi Education - Smart Hybrid Coaching"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                display: 'block'
+              }}
+            />
+            {/* Glassmorphic overlay badge */}
+            <div style={{
+              position: 'absolute',
+              bottom: 14,
+              left: 14,
+              right: 14,
+              background: 'rgba(255, 255, 255, 0.94)',
+              backdropFilter: 'blur(10px)',
+              borderRadius: 14,
+              padding: '10px 16px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              boxShadow: '0 8px 24px rgba(0,0,0,0.18)'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <img src="/logo.svg" alt="Bodhi" style={{ width: 28, height: 28, flexShrink: 0 }} />
+                <div>
+                  <strong style={{ fontSize: 13.5, color: 'var(--brand-d)', display: 'block', lineHeight: 1.2 }}>
+                    Bodhi Smart Learning
+                  </strong>
+                  <span style={{ fontSize: 11, color: 'var(--mute)' }}>NEET • JEE • Foundation • Tuition</span>
+                </div>
+              </div>
+              <span style={{
+                background: 'var(--tint)',
+                color: 'var(--brand-d)',
+                fontWeight: 700,
+                fontSize: 11,
+                padding: '4px 10px',
+                borderRadius: 20,
+                whiteSpace: 'nowrap'
+              }}>
+                Classroom + Online
+              </span>
+            </div>
           </div>
         </div>
       </div>
