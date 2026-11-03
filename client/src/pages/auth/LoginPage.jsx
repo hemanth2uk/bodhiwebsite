@@ -3,8 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('student@gmail.com');
-  const [password, setPassword] = useState('password');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
@@ -22,12 +22,6 @@ export default function LoginPage() {
     } finally {
       setLoading(false);
     }
-  };
-
-  const setDemo = (demoEmail) => {
-    setEmail(demoEmail);
-    setPassword('password');
-    setError('');
   };
 
   return (
@@ -189,41 +183,7 @@ export default function LoginPage() {
             </button>
           </form>
 
-          {/* Demo account pills */}
-          <div style={{ borderTop: '1px solid var(--line)', paddingTop: 14, marginTop: 4 }}>
-            <span style={{ fontSize: 12, color: 'var(--mute)', fontWeight: 600, display: 'block', marginBottom: 8 }}>
-              ⚡ Quick Demo Accounts (pass: password)
-            </span>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-              {[
-                { role: 'Student', email: 'student@gmail.com' },
-                { role: 'Parent', email: 'parent@gmail.com' },
-                { role: 'Teacher', email: 'teacher@gmail.com' },
-                { role: 'Mentor', email: 'mentor@gmail.com' },
-                { role: 'Coordinator (CMS Admin)', email: 'coordinator@gmail.com' }
-              ].map(d => (
-                <button
-                  key={d.email}
-                  type="button"
-                  onClick={() => setDemo(d.email)}
-                  style={{
-                    background: email === d.email ? 'var(--tint)' : 'var(--surf)',
-                    color: email === d.email ? 'var(--brand-d)' : 'var(--mute)',
-                    border: `1px solid ${email === d.email ? 'var(--brand)' : 'var(--line)'}`,
-                    borderRadius: 16,
-                    padding: '4px 10px',
-                    fontSize: 11.5,
-                    fontWeight: 600,
-                    cursor: 'pointer'
-                  }}
-                >
-                  {d.role}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ textAlign: 'center', fontSize: 13, color: 'var(--mute)' }}>
+          <div style={{ textAlign: 'center', fontSize: 13, color: 'var(--mute)', marginTop: 8 }}>
             Don't have an account?{' '}
             <Link to="/register" style={{ color: 'var(--brand)', fontWeight: 700, textDecoration: 'none' }}>
               Register now
