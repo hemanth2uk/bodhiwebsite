@@ -46,8 +46,11 @@ TARGET_DIR="/home/bodhiplus.com/public_html"
 if [ -d "$TARGET_DIR" ]; then
     cp -rf client/dist/* "$TARGET_DIR/"
     cp -f client/dist/.htaccess "$TARGET_DIR/"
-    chown -R bodhiplus:bodhiplus "$TARGET_DIR"
-    echo "Frontend deployed to $TARGET_DIR"
+    # Preserve existing owner/group safely
+    OWNER=$(stat -c '%U:%G' "$TARGET_DIR" 2>/dev/null || echo "nobody:nobody")
+    chown -R "$OWNER" "$TARGET_DIR" 2>/dev/null || true
+    chmod -R 755 "$TARGET_DIR" 2>/dev/null || true
+    echo "Frontend deployed to $TARGET_DIR (owner: $OWNER)"
 else
     echo "Directory $TARGET_DIR not found, skipping copy."
 fi
@@ -100,3 +103,4 @@ echo "  DEPLOYMENT COMPLETE!                    "
 echo "  API: http://127.0.0.1:5000/api/health   "
 echo "  Site: https://www.bodhiplus.com         "
 echo "=========================================="
+
