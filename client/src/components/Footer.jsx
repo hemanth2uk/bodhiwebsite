@@ -3,7 +3,10 @@ export default function Footer() {
     <footer className="w-ft">
       <div className="mx">
         <div>
-          <h4>🪷 Bodhi Education</h4>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
+            <img src="/logo.svg" alt="Bodhi Education" style={{ width: 36, height: 36, borderRadius: 8, background: '#fff', padding: 2 }} />
+            <h4 style={{ margin: 0, fontSize: 18 }}>Bodhi Education</h4>
+          </div>
           <p>Empowering learners with hybrid education that combines traditional wisdom with modern technology. Join thousands of students on their journey to excellence.</p>
           <div className="nl">
             <input type="email" placeholder="Your email" />

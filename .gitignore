@@ -3,8 +3,9 @@ node_modules/
 */node_modules/
 
 # Production build outputs
-dist/
-client/dist/
+/dist/
+!client/dist/
+!client/dist/**
 
 # Environment files
 .env.local
@@ -23,3 +24,4 @@ yarn-error.log*
 Thumbs.db
 .vscode/
 .idea/
+

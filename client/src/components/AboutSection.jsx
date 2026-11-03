@@ -30,8 +30,8 @@ export default function AboutSection() {
             <p>{about.mission}</p>
             <a href="#contact" className="w-b p" style={{ marginTop: 20 }}>Learn more →</a>
           </div>
-          <div className="w-pan">
-            <span style={{ fontSize: '5rem' }}>🪷</span>
+          <div className="w-pan" style={{ display: 'grid', placeItems: 'center', background: '#fff', borderRadius: 'var(--r)', padding: 32, boxShadow: 'var(--sh)' }}>
+            <img src="/logo.svg" alt="Bodhi Education" style={{ width: '70%', maxWidth: 240, height: 'auto', display: 'block' }} />
           </div>
         </div>
       </div>

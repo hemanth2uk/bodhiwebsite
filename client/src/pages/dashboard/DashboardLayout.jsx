@@ -65,13 +65,13 @@ export default function DashboardLayout() {
             width: 38,
             height: 38,
             borderRadius: 10,
-            background: 'var(--brand)',
-            color: '#fff',
+            background: '#fff',
             display: 'grid',
             placeItems: 'center',
-            fontSize: 20
+            padding: 4,
+            border: '1px solid var(--line)'
           }}>
-            🍃
+            <img src="/logo.svg" alt="Bodhi" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </span>
           <div>
             <strong style={{ fontSize: 17, display: 'block', lineHeight: 1.2 }}>Bodhi Education</strong>

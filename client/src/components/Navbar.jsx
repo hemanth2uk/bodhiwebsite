@@ -25,7 +25,8 @@ export default function Navbar() {
     <header className="w-hd">
       <nav className="w-nav">
         <Link to="/" className="w-brand">
-          🪷 Bodhi
+          <img src="/logo.svg" alt="Bodhi Education" className="wlg" />
+          <span>Bodhi Education</span>
         </Link>
 
         <div className="w-links">

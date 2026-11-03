@@ -37,10 +37,9 @@ export default function HeroSection() {
       <div className="mx">
         <div className="w-hero-l">
           <div className="w-chip">🌿 Knowledge is Power</div>
-          <h1>Awaken the <em>Genius</em> Within</h1>
+          <h1>Awaken the<br />Genius Within</h1>
           <p>
-            Bodhi blends ancient learning traditions with modern technology to deliver
-            a transformative hybrid education experience for students across India.
+            Like the Bodhi tree symbolizing enlightenment, Bodhi Academy nurtures your potential. Experience world-class coaching for NEET, JEE, and Entrance Exams in a serene, focused environment.
           </p>
           <div className="w-cta">
             <button className="w-b p" onClick={() => navigate('/register')}>Register now →</button>
@@ -63,11 +62,20 @@ export default function HeroSection() {
         </div>
 
         <div className="w-vis">
-          <div className="w-orb">
-            <span className="w-logo" style={{ fontSize: '3rem', filter: 'none' }}>🪷</span>
-            <div className="w-fl">📚 Live Classes</div>
-            <div className="w-fl">🎯 Doubt Solving</div>
-            <div className="w-fl">📊 Progress Tracking</div>
+          <div className="w-orb" />
+          <div className="w-logo">
+            <img src="/logo.svg" alt="Bodhi tree logo" style={{ border: 0, background: 'none', width: '62%', height: 'auto', display: 'block' }} />
+          </div>
+          <div className="w-fl f1">
+            👥 Live class
+            <small>Physics · 4:30 PM</small>
+          </div>
+          <div className="w-fl f2">
+            ✅ 98% success
+          </div>
+          <div className="w-fl f3">
+            👩‍🏫 Mentor connect
+            <small>Book a slot</small>
           </div>
         </div>
       </div>

@@ -52,9 +52,9 @@ export default function RegisterPage() {
             background: '#fff',
             display: 'grid',
             placeItems: 'center',
-            fontSize: 24
+            padding: 6
           }}>
-            🍃
+            <img src="/logo.svg" alt="Bodhi" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </span>
           Bodhi Education
         </div>
